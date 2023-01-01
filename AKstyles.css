@@ -1,0 +1,93 @@
+body{
+    background-color: #fef3d5;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 10px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform ease 800ms;
+}
+.item0{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transition: transform ease 800ms;
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14{
+  position: absolute;
+  top: 25%;
+  left: 0;
+  opacity: 0.0;
+  transition: transform ease 800ms;
+  transition: 0.8s;
+}
+
+.parent:hover .item0{
+  transform: translate(0, -42px);
+}
+.parent:hover .item1{
+  transform: translate(0, -39px);
+  opacity: 1;
+}
+.parent:hover .item2{
+  transform: translate(0, -36px);
+  opacity: 1;
+}
+.parent:hover .item3{
+  transform: translate(0, -33px);
+  opacity: 1;
+}
+.parent:hover .item4{
+  transform: translate(0, -30px);
+  opacity: 1;
+}
+.parent:hover .item5{
+  transform: translate(0, -27px);
+  opacity: 1;
+}
+.parent:hover .item6{
+  transform: translate(0, -24px);
+  opacity: 1;
+}
+.parent:hover .item7{
+  transform: translate(0, -21px);
+  opacity: 1;
+}
+.parent:hover .item8{
+  transform: translate(0, -18px);
+  opacity: 1;
+}
+.parent:hover .item9{
+  transform: translate(0, -15px);
+  opacity: 1;
+}
+.parent:hover .item10{
+  transform: translate(0, -12px);
+  opacity: 1;
+}
+.parent:hover .item11{
+  transform: translate(0, -9px);
+  opacity: 1;
+}
+.parent:hover .item12{
+  transform: translate(0, -6px);
+  opacity: 1;
+}
+.parent:hover .item13{
+  transform: translate(0, -3px);
+  opacity: 1;
+}
+.parent:hover .item14{
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+
+
