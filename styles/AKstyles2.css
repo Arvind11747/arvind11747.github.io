@@ -1,6 +1,6 @@
-body{
-    background-color: #FFF3D5;
-}
+
+/* 
+
 
 header{
   position: relative;
@@ -12,23 +12,77 @@ header{
   background-color: #fef3d5;
   justify-content: center;
   text-align: center;
+} */
+:root
+{
+  --logo-size: 70%;
+  --textColor-1 : #232323;
+  --min-width-1 : 70px;
+  --headerColor-1 : #FFF3D5;
 }
-.parent {
-  position: absolute;
-  top: 35px;
-  left: 25px;
+
+body{
+  font-family: 'Comfortaa', cursive;
+  margin: 0%;
+  
+}
+/* helpers/grid.css */
+.container
+{
+  z-index: 10;
+  width: 100%;
+  height: 100vh;  
+
+}
+.navbar{
+  height: 92px;
+  
   display: flex;
-  width: 120px;
-  height: 120px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  background-color: var(--headerColor-1);
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 50px;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--textColor-1);
+  font-weight: 700;
+  font-size: 20px;
+
+}
+.logo {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  top: -20%;
   transition: transform ease 800ms;
 }
+
 .item0{
+
+  width: var(--logo-size);
+  min-width: var(--min-width-1);
   position: absolute;
   top: 0;
   left: 0;
   transition: transform ease 800ms;
 }
 .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14{
+  width: var(--logo-size);
+  min-width: var(--min-width-1);
   position: absolute;
   top: 0;
   left: 0;
@@ -37,63 +91,67 @@ header{
   transition: 0.8s;
 }
 
-.parent:hover .item0{
+.content{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.logo:hover .item0{
   transform: translate(0, 0);
 }
-.parent:hover .item1{
+.logo:hover .item1{
   /* color:#FFD644; */
   transform: translate(0, 2px);
   opacity: 1;
 }
-.parent:hover .item2{
+.logo:hover .item2{
   transform: translate(0, 4px);
   opacity: 1;
 }
-.parent:hover .item3{
+.logo:hover .item3{
   transform: translate(0, 6px);
   opacity: 1;
 }
-.parent:hover .item4{
+.logo:hover .item4{
   transform: translate(0, 8px);
   opacity: 1;
 }
-.parent:hover .item5{
+.logo:hover .item5{
   transform: translate(0, 10px);
   opacity: 1;
 }
-.parent:hover .item6{
+.logo:hover .item6{
   transform: translate(0, 12px);
   opacity: 1;
 }
-.parent:hover .item7{
+.logo:hover .item7{
   transform: translate(0, 14px);
   opacity: 1;
 }
-.parent:hover .item8{
+.logo:hover .item8{
   transform: translate(0, 16px);
   opacity: 1;
 }
-.parent:hover .item9{
+.logo:hover .item9{
   transform: translate(0, 18px);
   opacity: 1;
 }
-.parent:hover .item10{
+.logo:hover .item10{
   transform: translate(0, 20px);
   opacity: 1;
 }
-.parent:hover .item11{
+.logo:hover .item11{
   transform: translate(0, 22px);
   opacity: 1;
 }
-.parent:hover .item12{
+.logo:hover .item12{
   transform: translate(0, 24px);
   opacity: 1;
 }
-.parent:hover .item13{
+.logo:hover .item13{
   transform: translate(0, 26px);
   opacity: 1;
 }
-.parent:hover .item14{
+.logo:hover .item14{
   transform: translate(0, 28px);
   opacity: 1;
 }
