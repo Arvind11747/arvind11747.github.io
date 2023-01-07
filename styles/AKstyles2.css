@@ -14,6 +14,7 @@ header{
   text-align: center;
 } */
 
+/*Rememb*/
 .dummy{
   display: flex;
   justify-content: center;
@@ -23,10 +24,32 @@ header{
 :root
 {
   --logo-size: 70%;
-  --textColor-1 : #232323;
   --min-width-1 : 70px;
-  --headerColor-1 : #FFF3D5;
-  --iconColor-1 : #FFF3D5;
+
+  --linkedinHoverColor : #0a66c2;
+  --githubHoverColor : #f2f2f2;
+  --youtubeHoverColor : #ff0000;
+  --itchioHoverColor : #fa5c5c;
+  --twitterHoverColor : #1da1f2;
+  --instaHoverColor : #ff0069;
+
+  /*AK Palatte*/
+  --ak-black: #232323;
+  --ak-beige: #fff3d5;
+  --ak-1-yellow: #ffd644;
+  --ak-2-orange-1: #ffb64a;
+  --ak-3-orange-2: #ff9620;
+  --ak-4-red-1: #ff4a45;
+  --ak-5-red-2: #ff004a;
+  --ak-6-pink: #d61488;
+  --ak-7-purple-1: #b00888;
+  --ak-8-purple-2: #740090;
+  --ak-9-purple-3: #5d38a8;
+  --ak-10-blue: #2270a2;
+  --ak-11-turquoise: #229aa2;
+  --ak-12-green-1: #48cea2;
+  --ak-13-green-2: #9cdcbc;
+  --ak-14-green-3: #bee8b4;
 }
 
 body{
@@ -45,7 +68,7 @@ body{
 }
 .footer-page
 {
-  background-color: #232323;
+  background-color: var(--ak-black);
   color: azure;
   
   display: flex;
@@ -68,19 +91,49 @@ body{
 .socials{
   flex: 1;
   text-align: right;
+  padding-right: 50px;
+}
+.invertTrue{
+  filter: brightness(0) saturate(100%) invert(97%) sepia(67%) saturate(528%) hue-rotate(308deg) brightness(101%) contrast(105%)
 }
 .socials .icons{
   list-style: none;
-  margin-left: 50px;
+  margin-left: 35px;
   display: inline-block;
+
 }
-.icons{
-  
+.icons a i{
+  transition: color 0.5s ease;
 }
+.icon-1:hover a i{
+  color: var(--githubHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-2:hover a i{
+  color: var(--linkedinHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-3:hover a i{
+  color: var(--youtubeHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-4:hover a i{
+  color: var(--itchioHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-5:hover a i{
+  color: var(--twitterHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-6:hover a i{
+  color: var(--instaHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+
 .icons a{
   text-decoration: none;
   font-size: 20px;
-  color: var(--iconColor-1);
+  color: var(--ak-beige);
 
 }
 .navbar{
@@ -92,7 +145,7 @@ body{
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
-  background-color: var(--headerColor-1);
+  background-color: var(--ak-beige);
 }
 
 nav{
@@ -107,7 +160,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: var(--textColor-1);
+  color: var(--ak-black);
   font-weight: 700;
   font-size: 20px;
 
