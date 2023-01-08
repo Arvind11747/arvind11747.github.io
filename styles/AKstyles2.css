@@ -14,13 +14,15 @@ header{
   text-align: center;
 } */
 
-/*Rememb*/
+/*TODO: Remember to remove once live*/
 .dummy{
   display: flex;
   justify-content: center;
 
   width: 100%;
 }
+
+
 :root
 {
   --logo-size: 70%;
@@ -32,7 +34,7 @@ header{
   --itchioHoverColor : #fa5c5c;
   --twitterHoverColor : #1da1f2;
   --instaHoverColor : #ff0069;
-
+  --white-1: #ffffff;
   /*AK Palatte*/
   --ak-black: #232323;
   --ak-beige: #fff3d5;
@@ -50,121 +52,45 @@ header{
   --ak-12-green-1: #48cea2;
   --ak-13-green-2: #9cdcbc;
   --ak-14-green-3: #bee8b4;
+
+  /*Fonts*/
+  --font-comfortaa: 'Comfortaa', cursive;
+  --font-text: 'Poppins', sans-serif;
+  --font-codeText: 'Space Mono', monospace;
+  --font-heading-1: 'Syne', sans-serif;
+  --font-heading-2:'Krona One', sans-serif;
 }
 
 body{
-  font-family: 'Comfortaa', cursive;
+  font-family: var(--font-text);
   margin: 0%;
+  padding: 0%;
   
 }
-/* helpers/grid.css */
-.header
-{
-  z-index: 10;
-  width: 100%;
-  height: 92px;  
-  position: fixed;
-  top:0%;
-}
-.footer-page
-{
-  background-color: var(--ak-black);
-  color: azure;
-  
-  display: flex;
-  box-sizing: border-box;
-
-  align-items: center;
-
-  height: 70px;
-  width: 100%;
-
-}
-.siteAuthor{
-  padding-left: 40px;
-  display: inline-block;
-}
-.siteAuthor p i{
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.socials{
-  flex: 1;
-  text-align: right;
-  padding-right: 50px;
-}
+/**Dark theme A/B*/
 .invertTrue{
   filter: brightness(0) saturate(100%) invert(97%) sepia(67%) saturate(528%) hue-rotate(308deg) brightness(101%) contrast(105%)
 }
-.socials .icons{
-  list-style: none;
-  margin-left: 35px;
-  display: inline-block;
 
+/* helpers/grid.css */
+.header{
+  z-index: 10;
+  width: 100%;
+  height: 92px;  
+  top:0%;
+  background-color: var(--white-1);
+  transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease-in-out;
 }
-.icons a i{
-  transition: color 0.5s ease;
-}
-.icon-1:hover a i{
-  color: var(--githubHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-.icon-2:hover a i{
-  color: var(--linkedinHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-.icon-3:hover a i{
-  color: var(--youtubeHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-.icon-4:hover a i{
-  color: var(--itchioHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-.icon-5:hover a i{
-  color: var(--twitterHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-.icon-6:hover a i{
-  color: var(--instaHoverColor);
-  transition: color 0.5s ease-in-out;
-}
-
-.icons a{
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--ak-beige);
-
-}
-.navbar{
-  height: 92px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: var(--ak-beige);
+  box-shadow: 0px 5px 35px #bbbbbb;
+  transition: box-shadow 0.5s ease-in-out,background-color 0.8s ease-in-out;
 }
 
-nav{
-  flex: 1;
-  text-align: right;
-}
-
-nav ul li{
-  list-style: none;
-  margin-left: 50px;
-  display: inline-block;
-}
-nav ul li a{
-  text-decoration: none;
-  color: var(--ak-black);
-  font-weight: 700;
-  font-size: 20px;
-
-}
+/**H-AK Logo*/
 .logo {
   cursor: pointer;
   box-sizing: border-box;
@@ -172,7 +98,6 @@ nav ul li a{
   top: -20%;
   transition: transform ease 800ms;
 }
-
 .item0{
 
   width: var(--logo-size);
@@ -191,15 +116,6 @@ nav ul li a{
   opacity: 0.0;
   transition: transform ease 800ms;
   transition: 0.8s;
-}
-.page
-{
-  position: absolute;
-  top: 95px;
-}
-.content{
-  padding-left: 20%;
-  padding-right: 20%;
 }
 .logo:hover .item0{
   transform: translate(0, 0);
@@ -261,6 +177,204 @@ nav ul li a{
   transform: translate(0, 28px);
   opacity: 1;
 }
+/**H-Navigation Bar*/
+.navbar{
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  /*background-color: var(--ak-beige);*/
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  margin-left: 50px;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--ak-black);
+  font-family: var(--font-heading-2);
+  font-weight:bold;
+  font-size: 25px;
+}
+
+
+
+.footer{
+  background-color: var(--ak-black);
+  color: azure;
+  
+  display: flex;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+  font-weight: 300;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  bottom: 0%;
+
+}
+.siteAuthor{
+  padding-left: 40px;
+  display: inline-block;
+  font-family:var(--font-comfortaa);
+  font-weight: 700;
+}
+.siteAuthor p i{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.socials{
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+  font-family:var(--font-comfortaa);
+  font-weight: 300;
+}
+.socials .icons{
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+
+}
+.icons a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--ak-beige);
+
+}
+.icons a i{
+  transition: color 0.5s ease;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.icon-1:hover a i{
+  color: var(--githubHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-2:hover a i{
+  color: var(--linkedinHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-3:hover a i{
+  color: var(--youtubeHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-4:hover a i{
+  color: var(--itchioHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-5:hover a i{
+  color: var(--twitterHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-6:hover a i{
+  color: var(--instaHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+
+.page{
+  padding-top: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.sticky+.page{
+  padding-top: 102px;
+}
+
+h1{
+  font-family: var(--font-heading-2);
+  font-weight: 800;
+  font-size: 80px;
+}
+.title{
+  justify-content: center;
+  align-content: center;
+  
+}
+#changeColor{
+  animation-name: colorAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorAnim {
+  0%    {color:var(--ak-1-yellow)}
+  7%    {color:var(--ak-2-orange-1)}
+  14%   {color:var(--ak-3-orange-2)}
+  28%   {color:var(--ak-4-red-1)}
+  35%   {color:var(--ak-5-red-2)}
+  42%   {color:var(--ak-6-pink)}
+  49%   {color:var(--ak-7-purple-1)}
+  56%   {color:var(--ak-8-purple-2)}
+  63%   {color:var(--ak-9-purple-3)}
+  70%   {color:var(--ak-10-blue)}
+  77%   {color:var(--ak-11-turquoise)}
+  82%   {color:var(--ak-12-green-1)}
+  89%   {color:var(--ak-13-green-2)}
+  96%   {color:var(--ak-14-green-3)}
+  100%  {color:var(--ak-1-yellow)}
+
+}
+/* .content{
+  padding-left: 20%;
+  padding-right: 20%;
+} */
+
+code{
+  font-family: var(--font-codeText);
+  font-weight: bold;
+  color: #ffffff;
+}
+.codeBlock{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top:20px;
+  margin-bottom: 30px;
+  background-color: #323233;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+/*Programing Styles*/
+#Pkey
+{
+  color:var(--ak-4-red-1);
+}
+#Pfunc
+{
+  color:var(--ak-13-green-2);
+}
+#Pvar
+{
+  color:var(--ak-1-yellow)
+}
+#Plib
+{
+  color:var(--ak-3-orange-2);
+}
+#Pcomm
+{
+  color:var(--ak-12-green-1);
+}
+#Pindt{
+  margin-left: 20px;
+}
+
+
+
 
 
 
