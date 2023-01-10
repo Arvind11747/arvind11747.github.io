@@ -45,36 +45,35 @@ const footer =`
     <span>
         Find me at:
     </span>
-    <div class="icons icon-1">
+    <div class="icons iconColor-1 icon-1">
         <a href="https://github.com/Arvind11747" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-github"></i>
         </a>
     </div>
-    <div class="icons icon-2">
-    <a href="https://linkedin.com/in/arvind-kumar-155430115/" target="_blank" rel="noreferrer noopener">
-        <i  class="fa-brands fa-linkedin"></i>
-    </a>
+    <div class="icons iconColor-1 icon-2">
+        <a href="https://linkedin.com/in/arvind-kumar-155430115/" target="_blank" rel="noreferrer noopener">
+            <i  class="fa-brands fa-linkedin"></i>
+        </a>
     </div>
-    <div class="icons icon-3">
-    <a href="https://www.youtube.com/@user-fd9xl5zj9s" target="_blank" rel="noreferrer noopener">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
+    <div class="icons iconColor-1 icon-3">
+        <a href="https://www.youtube.com/@arvind11747" target="_blank" rel="noreferrer noopener">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
     </div>
-    <div class="icons icon-4">
-    <a href="https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
-        <i class="fa-brands fa-itch-io"></i>
-    </a>
+    <div class="icons iconColor-1 icon-4">
+        <a href="https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
+            <i class="fa-brands fa-itch-io"></i>
+        </a>
     </div>
-    <div class="icons icon-5">
-    <a href="https://www.twitter.com/HikatoKage117"target="_blank" rel="noreferrer noopener">
-        <i class="fa-brands fa-twitter"></i>
-    </a>
+    <div class="icons iconColor-1 icon-5">
+        <a href="https://www.twitter.com/HikatoKage117"target="_blank" rel="noreferrer noopener">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
     </div>
-    <div class="icons icon-6">
-    <a href="https://www.instagram.com/lyricmation/"target="_blank" rel="noreferrer noopener">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
+    <div class="icons iconColor-1 icon-6">
+        <a href="https://www.instagram.com/lyricmation/"target="_blank" rel="noreferrer noopener">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
 </div>
 `
