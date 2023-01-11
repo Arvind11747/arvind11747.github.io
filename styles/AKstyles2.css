@@ -300,11 +300,11 @@ nav ul li a{
   transition: color 0.5s ease-in-out;
 }
 .logoMask{
-  
+
   -webkit-mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
   mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
-  -webkit-mask-size: 50%;
-  mask-size:50%;
+  -webkit-mask-size: 100%;
+  mask-size:100%;
   -webkit-mask-position:  center;
   mask-position:  center;
   mask-border: 2px;
@@ -313,10 +313,16 @@ nav ul li a{
   -webkit-mask-repeat: no-repeat;
   mask-repeat:no-repeat;    
 }
+/* .logoParent{
+position:sticky;
+} */
 .rainbow{
-  width: 950px;
+  width: 500px;
   text-align: right;
 }
+/* .logoBorder{
+  width: 950px;
+} */
 
 .btn {
   animation: backgroundColorAnim;
@@ -339,6 +345,7 @@ nav ul li a{
 }
 
 .page{
+  margin-top: 3%;
   padding-top: 16px;
   padding-left: 5%;
   padding-right: 5%;
@@ -347,18 +354,32 @@ nav ul li a{
 .sticky+.page{
   padding-top: 102px;
 }
-#tagLine{
+
+.heroTitle #hello{
   font-family: var(--font-heading-2);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 200%;
   margin-top: 5px;
+  margin-bottom: 8px;
+  text-indent: 2%;
 }
-.introTitle{
+.heroTitle #tagline{
   font-family: var(--font-heading-2);
   font-weight: 800;
-  font-size: 80px;
-  margin-bottom: 10px;
+  font-size: 150%;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
+
+.heroTitle h1{
+  font-family: var(--font-heading-2);
+  font-weight: 800;
+  font-size: 500%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
 .introduction{
   align-content: center;
   display: flex;
@@ -367,18 +388,16 @@ nav ul li a{
   -webkit-box-pack: justify;
   justify-content: space-between;
   height: calc(80vh - 100px);
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
-#changeColor{
+.changeColor{
   animation-name: colorAnim;
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 
-#subText{
-  font-size: 50px;
-}
+
 @keyframes colorAnim {
   0%    {color:var(--ak-1-yellow)}
   7%    {color:var(--ak-2-orange-1)}
