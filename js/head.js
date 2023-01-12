@@ -17,9 +17,13 @@ const head = `
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Turret+Road:wght@800&family=Unbounded:wght@500&display=swap" rel="stylesheet">
+
 <style>@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');</style>
 <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Comfortaa:wght@300;400;700&display=swap'); </style>  
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Righteous&family=Turret+Road:wght@800&family=Unbounded:wght@500&display=swap');
+</style>
 
 </head>
 `;
