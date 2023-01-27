@@ -63,7 +63,9 @@ header{
   --font-style-flick-3: 'Turret Road', cursive;
   --font-style-flick-4: 'Unbounded', cursive;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 body{
   /*background-color: var(--ak-black);*/
   font-family: var(--font-text);
@@ -361,23 +363,22 @@ that they form a hexagon
   display: flex;
   justify-content: center;
  }
+ .horizontal-list ul{
+  padding: 0;
+
+ }
  .horizontal-list ul li{
   list-style: none;
   margin-left: 25px;
   margin-right: 25px;
   display: inline-block;
+  align-self: center;
   text-align:center;
  }
 .horizontal-list ul li img{
-  height: 200px;
+  height: 70%;
 }
- .center-row{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
- }
+
 section{
   height:100%;
   min-height: 100vh;
@@ -397,23 +398,35 @@ h3{
 }
 .card-shadow{
   padding: 30px;
-  margin: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 30px;
+  margin-bottom: 80px;
   box-shadow: 0px 8px 15px #aaaaaa ;
   border-radius: 20px;
+  align-items: center;
+  min-width: 200px;
 }
 
 .big-text p {
-
+  text-align: center;
+  font-size: 20px;
+}
+.about-me p {
   text-align: justify;
   font-size: 20px;
 }
+.devicon ul li{
+  vertical-align: middle;
+}
 .devicon ul li i{
   font-size: 80px;
+  color:var(--ak-black)
 }
 
 .devicon ul li p{
   font-size: 25px;
+  color:var(--ak-black)
 }
 
 /**F-Bar*/

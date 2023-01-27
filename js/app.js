@@ -25,7 +25,7 @@ const header =`
     <!--*Navigation list-->
     <nav>
         <ul>
-            <li><a href="#AboutMe">Home</a></li>
+            <li><a id="home">Home</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="https://blog.arvindg.com">Blogs</a></li>
             <li><a href="#">Contact</a></li>
@@ -71,7 +71,7 @@ const footer =`
         </a>
     </div>
     <div class="icons iconColor-1 icon-6">
-        <a id="twitter" target="_blank" rel="noreferrer noopener">
+        <a id="instagram" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-instagram"></i>
         </a>
     </div>
@@ -117,6 +117,17 @@ function linkInserter() {
     document.getElementById("itchio").href = "https://arvindkumar.itch.io";
     document.getElementById("twitter").href = "https://www.twitter.com/HikatoKage117";
     document.getElementById("instagram").href = "https://www.instagram.com/lyricmation/";
+
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+
+    if(page == "index1.html"){
+        document.getElementById("home").href = "#top";
+    }
+    else{
+        document.getElementById("home").href = "index1.html";
+    }
+    
     //document.getElementById("website").href = "#";
 }
 
