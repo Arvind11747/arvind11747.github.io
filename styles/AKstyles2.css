@@ -90,7 +90,7 @@ body{
   top: 0;
   width: 100%;
   background-color: var(--ak-beige);
-  box-shadow: 0px 5px 35px #bbbbbb;
+  box-shadow: 0px 3px 15px #aaaaaa;
   transition: box-shadow 0.5s ease-in-out,background-color 0.8s ease-in-out;
 }
 
@@ -217,11 +217,16 @@ nav ul li a{
 
 .page{
   margin-top: 3%;
-  padding-top: 16px;
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 100%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
 }
+.fontflick:hover{
+  animation-name: fontflick;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 
+}
 .introduction{
   align-content: center;
   display: flex;
@@ -264,7 +269,6 @@ nav ul li a{
 }
 
 .logoMask{
-
   -webkit-mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
   mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
   -webkit-mask-size: 100%;
@@ -308,15 +312,108 @@ position:sticky;
 }
 .center-heading{
   display: flex;
+  position: relative;
+  bottom: 0;
+  padding: 5px;
   justify-content: center;
 }
 h2{
   font-family: var(--font-heading-2);
+  margin: 0;
 }
+/* .hexa{
+  top: 30vh;
+  left: 40%;
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--ak-black);
+  border-radius: 10px;
+  width: 100px; 
+  height: 63px;
+  box-sizing: border-box;
+  transition: all 1s;
+  border: 0.4vh solid transparent;
+}
+
+.hexa:before, .hexa:after {
+  content: "";
+  border: inherit;
+  position: absolute;
+  top: -0.5vh;
+  left: -0.5vh;
+  background-color: var(--ak-black);
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+} 
+
+that they form a hexagon
+.hexa:before {
+  transform: rotate(60deg);
+}
+.hexa:after {
+  transform: rotate(-60deg);
+}
+ */
+ .horizontal-list{
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+ }
+ .horizontal-list ul li{
+  list-style: none;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+  text-align:center;
+ }
+.horizontal-list ul li img{
+  height: 200px;
+}
+ .center-row{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ }
 section{
   height:100%;
+  min-height: 100vh;
   width:100%;
+  padding-top: 35px;
+  padding-left: 85px;
+  padding-right: 85px;
   box-sizing:border-box;
+}
+.intro-sec{
+  padding-top: 15px;
+  min-height: 60vh;
+}
+h3{
+  font-size: x-large;
+  text-align: center;
+}
+.card-shadow{
+  padding: 30px;
+  margin: 80px;
+  margin-top: 30px;
+  box-shadow: 0px 8px 15px #aaaaaa ;
+  border-radius: 20px;
+}
+
+.big-text p {
+
+  text-align: justify;
+  font-size: 20px;
+}
+.devicon ul li i{
+  font-size: 80px;
+}
+
+.devicon ul li p{
+  font-size: 25px;
 }
 
 /**F-Bar*/
@@ -490,7 +587,7 @@ code{
   100%  {background-color:var(--ak-1-yellow)}
 
 }
-@keyframes fontFlick {
+@keyframes fontflick {
  
   0% {font-family: var(--font-heading-1);}
   20%{font-family:var(--font-heading-2);}
