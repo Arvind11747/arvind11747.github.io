@@ -3,22 +3,22 @@ const header =`
 <div class="navbar">
     <!--*Logo-->
     <div class="logo">
-    <img class="item14" src="images/logo_h_img/14.png" >
-    <img class="item13" src="images/logo_h_img/13.png" >
-    <img class="item12" src="images/logo_h_img/12.png" >
-    <img class="item11" src="images/logo_h_img/11.png" >
-    <img class="item10" src="images/logo_h_img/10.png" >
-    <img class="item9" src="images/logo_h_img/9.png" >
-    <img class="item8" src="images/logo_h_img/8.png" >
-    <img class="item7" src="images/logo_h_img/7.png" >
-    <img class="item6" src="images/logo_h_img/6.png" >
-    <img class="item5" src="images/logo_h_img/5.png" >
-    <img class="item4" src="images/logo_h_img/4.png" >
-    <img class="item3" src="images/logo_h_img/3.png" >
-    <img class="item2" src="images/logo_h_img/2.png" >
-    <img class="item1" src="images/logo_h_img/1.png" >
+    <img class="item14 ak-14" src="images/ak.svg">
+    <img class="item13 ak-13" src="images/ak.svg">
+    <img class="item12 ak-12" src="images/ak.svg">
+    <img class="item11 ak-11" src="images/ak.svg">
+    <img class="item10 ak-10" src="images/ak.svg">
+    <img class="item9 ak-9" src="images/ak.svg">
+    <img class="item8 ak-8" src="images/ak.svg">
+    <img class="item7 ak-7" src="images/ak.svg">
+    <img class="item6 ak-6" src="images/ak.svg">
+    <img class="item5 ak-5" src="images/ak.svg">
+    <img class="item4 ak-4" src="images/ak.svg">
+    <img class="item3 ak-3" src="images/ak.svg">
+    <img class="item2 ak-2" src="images/ak.svg">
+    <img class="item1 ak-1" src="images/ak.svg">
     <a href="/#">
-        <img class="invert  item0" src="images/logo_h_img/0.png" >
+        <img id="invert" class="item0 ak-0" src="images/ak.svg">
     </a> 
     </div>
 

@@ -75,7 +75,7 @@ body{
 }
 /**Dark theme A/B*/
 .invertTrue{
-  filter: brightness(0) saturate(100%) invert(97%) sepia(67%) saturate(528%) hue-rotate(308deg) brightness(101%) contrast(105%)
+  filter: invert(94%) sepia(13%) saturate(917%) hue-rotate(315deg) brightness(107%) contrast(103%);
 }
 
 /* helpers/grid.css */
@@ -109,7 +109,6 @@ body{
   transition: transform ease 800ms;
 }
 .item0{
-
   width: var(--logo-size);
   min-width: var(--min-width-1);
   position: absolute;
@@ -127,6 +126,54 @@ body{
   transition: transform ease 800ms;
   transition: 0.8s;
 }
+.ak-0{
+  filter: invert(12%) sepia(75%) saturate(0%) hue-rotate(206deg) brightness(98%) contrast(99%);
+}
+.ak-1{
+  filter: invert(81%) sepia(46%) saturate(633%) hue-rotate(350deg) brightness(101%) contrast(101%);
+}
+.ak-2{
+  filter: invert(74%) sepia(39%) saturate(780%) hue-rotate(339deg) brightness(100%) contrast(104%);  
+}
+.ak-3{
+  filter: invert(64%) sepia(34%) saturate(1656%) hue-rotate(342deg) brightness(102%) contrast(102%);
+}
+.ak-4{
+  filter: invert(40%) sepia(60%) saturate(3371%) hue-rotate(335deg) brightness(107%) contrast(105%);
+}
+.ak-5{
+  filter: invert(18%) sepia(87%) saturate(7456%) hue-rotate(336deg) brightness(97%) contrast(109%);
+}
+.ak-6{
+  filter: invert(17%) sepia(97%) saturate(3069%) hue-rotate(309deg) brightness(93%) contrast(100%);
+}
+.ak-7{
+  filter: invert(15%) sepia(69%) saturate(4262%) hue-rotate(301deg) brightness(92%) contrast(108%);  
+}
+.ak-8{
+  filter: invert(10%) sepia(75%) saturate(6896%) hue-rotate(288deg) brightness(80%) contrast(114%);
+}
+.ak-9{
+  filter: invert(19%) sepia(83%) saturate(2077%) hue-rotate(248deg) brightness(93%) contrast(87%);
+}
+.ak-10{
+  filter: invert(34%) sepia(72%) saturate(516%) hue-rotate(160deg) brightness(96%) contrast(94%);
+}
+.ak-11{
+  filter: invert(45%) sepia(60%) saturate(553%) hue-rotate(135deg) brightness(99%) contrast(85%);
+}
+.ak-12{
+  filter: invert(70%) sepia(75%) saturate(334%) hue-rotate(106deg) brightness(88%) contrast(89%);
+}
+.ak-13{
+  filter: invert(92%) sepia(12%) saturate(887%) hue-rotate(87deg) brightness(92%) contrast(86%);
+}
+.ak-14{
+  filter: invert(93%) sepia(16%) saturate(607%) hue-rotate(50deg) brightness(97%) contrast(87%);
+}
+
+
+
 .logo:hover .item0{
   transform: translate(0, 0);
 }
