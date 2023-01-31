@@ -17,7 +17,7 @@ const header =`
     <img class="item3 ak-3" src="images/ak.svg">
     <img class="item2 ak-2" src="images/ak.svg">
     <img class="item1 ak-1" src="images/ak.svg">
-    <a href="/#">
+    <a href="#">
         <img id="invert" class="item0 ak-0" src="images/ak.svg">
     </a> 
     </div>
@@ -26,9 +26,9 @@ const header =`
     <nav>
         <ul>
             <li><a id="home">Home</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="https://blog.arvindg.com">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </div>
