@@ -2,6 +2,17 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head id="head"></head>
   <script src="js/head.js"></script>
+  
+  <!--*Github calender-->
+  <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+  <!--*Github calender-->
+
   <body>
     <!--*Header Section-->
     <div class="header" id="header"></div>
@@ -13,7 +24,7 @@
             <p id="hello">Hello there! I'm</p>
             <h1>Arvind Kumar</h1>
             <p id="tagline">Game Developer and Technical Artist</p>
-            <a href="_public/arvindRes/ArvindResumeUpdated.pdf" download="ArvindResume.pdf" target="_blank" rel="noreferrer noopener">
+            <a href="_public/arvindRes/ArvindResumeUpdated.pdf" download target="_blank" rel="noreferrer noopener">
               <button class="btn">Download Resume<i class="fa-regular fa-circle-down"></i></button>      
             </a>
             <div class="reachOut">
@@ -55,6 +66,9 @@
 
             Take a look at my portfolio and feel free to contact me if you like my works!
           </p>
+          <a href="#">
+            <button class="btn">Portfolio</button>      
+          </a>
         </div>
         
         <div class="center-heading">
@@ -231,11 +245,30 @@
             </ul>
           </div>
         </div>
+        
+        <div class="card-shadow">
+          <div class="center-heading big-text">
+            <p><strong>Github stats</strong></p>
+          </div>
+          <!-- Prepare a container for your calendar. -->
+          <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+          </div>
+        </div>
       </section>
     </div>
 
     <!--*Footer Section-->
     <div class="footer" id="footer"></div>  
   </body>
+  
   <script src="js/app.js"></script>
+  <!--*Github calender-->
+  <script> 
+      //GitHubCalendar(".calendar", "your-username");
+      // or enable responsive functionality
+      GitHubCalendar(".calendar", "Hikaru11747", { responsive: true });
+  </script>
+  <!--*Github calender-->
 </html>

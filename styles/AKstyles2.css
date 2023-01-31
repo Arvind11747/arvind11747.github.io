@@ -318,8 +318,8 @@ nav ul li a{
 }
 
 .logoMask{
-  -webkit-mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
-  mask-image: url('https://arvindg.com/images/logo_h_img/ResumeAsset%20127.svg');
+  -webkit-mask-image: url('https://arvindg.com/images/ak.svg');
+  mask-image: url('https://arvindg.com/images/ak.svg');
   -webkit-mask-size: 100%;
   mask-size:100%;
   -webkit-mask-position:  center;
@@ -462,6 +462,9 @@ h3{
 .about-me p {
   text-align: justify;
   font-size: 20px;
+}
+.about-me a{
+  align-self: center;
 }
 .devicon ul li{
   vertical-align: middle;
