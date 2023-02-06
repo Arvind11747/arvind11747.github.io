@@ -45,33 +45,33 @@ const footer =`
     <span>
         Find me at:
     </span>
-    <div class="icons iconColor-1 icon-1">
-        <a id="github" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-01">
+        <a id="github" href = "https://github.com/Hikaru11747" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-github"></i>
         </a>
     </div>
-    <div class="icons iconColor-1 icon-2">
-        <a id="linkedin" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-02">
+        <a id="linkedin" href = "https://linkedin.com/in/arvind-kumar-155430115/" target="_blank" rel="noreferrer noopener">
             <i  class="fa-brands fa-linkedin"></i>
         </a>
     </div>
-    <div class="icons iconColor-1 icon-3">
-        <a id="youtube" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-03">
+        <a id="youtube" href = "https://www.youtube.com/@arvind11747" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-youtube"></i>
         </a>
     </div>
-    <div class="icons iconColor-1 icon-4">
-        <a id="itchio" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-04">
+        <a id="itchio" href = "https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-itch-io"></i>
         </a>
     </div>
-    <div class="icons iconColor-1 icon-5">
-        <a id="twitter" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-05">
+        <a id="twitter" href = "https://www.twitter.com/HikatoKage117" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-twitter"></i>
         </a>
     </div>
-    <div class="icons iconColor-1 icon-6">
-        <a id="instagram" target="_blank" rel="noreferrer noopener">
+    <div class="icons iconColor-1 icon-06">
+        <a id="instagram" href = "https://www.instagram.com/lyricmation/" target="_blank" rel="noreferrer noopener">
             <i class="fa-brands fa-instagram"></i>
         </a>
     </div>
@@ -111,12 +111,12 @@ year.innerHTML = new Date().getFullYear();
 linkInserter();
 
 function linkInserter() {
-    document.getElementById("github").href = "https://github.com/Hikaru11747";
-    document.getElementById("linkedin").href = "https://linkedin.com/in/arvind-kumar-155430115/";
-    document.getElementById("youtube").href = "https://www.youtube.com/@arvind11747";
-    document.getElementById("itchio").href = "https://arvindkumar.itch.io";
-    document.getElementById("twitter").href = "https://www.twitter.com/HikatoKage117";
-    document.getElementById("instagram").href = "https://www.instagram.com/lyricmation/";
+    // document.getElementById("github").href = "https://github.com/Hikaru11747";
+    // document.getElementById("linkedin").href = "https://linkedin.com/in/arvind-kumar-155430115/";
+    // document.getElementById("youtube").href = "https://www.youtube.com/@arvind11747";
+    // document.getElementById("itchio").href = "https://arvindkumar.itch.io";
+    // document.getElementById("twitter").href = "https://www.twitter.com/HikatoKage117";
+    // document.getElementById("instagram").href = "https://www.instagram.com/lyricmation/";
 
     var path = window.location.pathname;
     var page = path.split("/").pop();

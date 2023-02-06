@@ -546,27 +546,27 @@ h3{
   padding-left: 15px;
   padding-right: 15px;
 }
-.icon-1:hover a i{
+.icon-01:hover a i{
   color: var(--githubHoverColor);
   transition: color 0.5s ease-in-out;
 }
-.icon-2:hover a i{
+.icon-02:hover a i{
   color: var(--linkedinHoverColor);
   transition: color 0.5s ease-in-out;
 }
-.icon-3:hover a i{
+.icon-03:hover a i{
   color: var(--youtubeHoverColor);
   transition: color 0.5s ease-in-out;
 }
-.icon-4:hover a i{
+.icon-04:hover a i{
   color: var(--itchioHoverColor);
   transition: color 0.5s ease-in-out;
 }
-.icon-5:hover a i{
+.icon-05:hover a i{
   color: var(--twitterHoverColor);
   transition: color 0.5s ease-in-out;
 }
-.icon-6:hover a i{
+.icon-06:hover a i{
   color: var(--instaHoverColor);
   transition: color 0.5s ease-in-out;
 }
