@@ -121,11 +121,11 @@ function linkInserter() {
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
-    if(page == "index1.html"){
+    if(page == "index.html"){
         document.getElementById("home").href = "#top";
     }
     else{
-        document.getElementById("home").href = "index1.html";
+        document.getElementById("home").href = "index.html";
     }
     
     //document.getElementById("website").href = "#";
