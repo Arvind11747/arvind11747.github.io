@@ -235,7 +235,7 @@ body{
   opacity: 1;
 }
 /**H-Navigation Bar*/
-.navbar{
+.my-navbar{
   height: 92px;
 
   display: flex;

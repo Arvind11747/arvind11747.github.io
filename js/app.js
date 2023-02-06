@@ -1,6 +1,6 @@
 
 const header =`
-<div class="navbar">
+<div class="my-navbar">
     <!--*Logo-->
     <div class="logo">
     <img class="item14 ak-14" src="images/ak.svg">
@@ -26,9 +26,9 @@ const header =`
     <nav>
         <ul>
             <li><a id="home">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="https://arvindkumar.itch.io">Portfolio</a></li>
             <li><a href="https://blog.arvindg.com">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="mailto:arvindkumarlym@gmail.com">Contact</a></li>
         </ul>
     </nav>
 </div>
