@@ -1,1 +1,534 @@
-/*# sourceMappingURL=styles.css.map */
+/*TODO: Remember to remove once live*/
+.dummy{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+:root
+{
+  --logo-size: 75%;
+  --min-width-1 : 75px;
+  
+  --translateDis: 2.2px;
+
+  --linkedinHoverColor : #0a66c2;
+  --githubHoverColor : #f2f2f2;
+  --youtubeHoverColor : #ff0000;
+  --itchioHoverColor : #fa5c5c;
+  --twitterHoverColor : #1da1f2;
+  --instaHoverColor : #ff0069;
+  --white-1: #ffffff;
+  /*AK Palatte*/
+  --ak-black: #232323;
+  --ak-beige: #fff3d5;
+  --ak-1-gold: #ffcc33;
+  --ak-2-orange: #ff9933;
+  --ak-3-red: #ff4a45;
+  --ak-4-neonpink: #ff0066;
+  --ak-5-fuchsia: #cc0099;
+  --ak-6-magenta: #990099;
+  --ak-7-darkpurple: #740090;
+  --ak-8-purple: #5d38a8;
+  --ak-9-darkblue: #2270a2;
+  --ak-10-turquoise: #229aa2;
+  --ak-11-green: #48cea2;
+  --ak-12-lightgreen: #bee8b4;
+
+  /*Fonts*/
+  --font-comfortaa: 'Comfortaa', cursive;
+  --font-text: 'Poppins', sans-serif;
+  --font-codeText: 'Space Mono', monospace;
+  --font-heading-1: 'Syne', sans-serif;
+  --font-heading-2:'Krona One', sans-serif;
+
+  --font-style-flick-1: 'Krona One', sans-serif;
+  --font-style-flick-2: 'Righteous', cursive;
+  --font-style-flick-3: 'Turret Road', cursive;
+  --font-style-flick-4: 'Unbounded', cursive;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background-color: #ededed;
+  font-family: var(--font-text);
+  margin: 0%;
+  padding: 0%;
+
+}
+/**Dark theme A/B*/
+.invertTrue{
+  filter: invert(94%) sepia(13%) saturate(917%) hue-rotate(315deg) brightness(107%) contrast(103%);
+}
+
+/* helpers/grid.css */
+.header{
+  z-index: 10;
+  width: 100%;
+  height: 95px;
+  top:0%;
+  background-color: #ededed;
+  transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease-in-out;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--ak-beige);
+  box-shadow: 0px 3px 15px #c9c9c9;
+  transition: box-shadow 0.5s ease-in-out,background-color 0.8s ease-in-out;
+}
+
+.sticky+.page{
+  padding-top: 105px;
+}
+
+/**H-AK Logo*/
+.logo {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  top: -20%;
+  transition: translate ease 800ms;
+
+}
+.logo img{
+  width: var(--logo-size);
+  min-width: var(--min-width-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bgLogos{
+  opacity: 0.0;
+  transition: translate ease 800ms;
+  transition: 0.8s;
+}
+
+.ak-0{
+  filter: invert(13%) sepia(1%) saturate(0%) hue-rotate(56deg) brightness(97%) contrast(97%);
+}
+.ak-1{
+  filter: invert(79%) sepia(92%) saturate(1190%) hue-rotate(328deg) brightness(102%) contrast(101%);
+}
+.ak-2{
+  filter: invert(61%) sepia(34%) saturate(977%) hue-rotate(344deg) brightness(104%) contrast(102%);
+}
+.ak-3{
+  filter: invert(54%) sepia(92%) saturate(4676%) hue-rotate(335deg) brightness(103%) contrast(103%);
+}
+.ak-4{
+  filter: invert(19%) sepia(81%) saturate(7451%) hue-rotate(329deg) brightness(99%) contrast(108%);
+}
+.ak-5{
+  filter: invert(15%) sepia(94%) saturate(7145%) hue-rotate(308deg) brightness(87%) contrast(104%);
+}
+.ak-6{
+  filter: invert(11%) sepia(100%) saturate(5441%) hue-rotate(296deg) brightness(77%) contrast(108%);
+}
+.ak-7{
+  filter: invert(9%) sepia(70%) saturate(5041%) hue-rotate(284deg) brightness(114%) contrast(120%);
+}
+.ak-8{
+  filter: invert(23%) sepia(21%) saturate(6652%) hue-rotate(246deg) brightness(89%) contrast(90%);
+}
+.ak-9{
+  filter: invert(38%) sepia(47%) saturate(950%) hue-rotate(162deg) brightness(87%) contrast(85%);
+}
+.ak-10{
+  filter: invert(48%) sepia(88%) saturate(391%) hue-rotate(135deg) brightness(89%) contrast(87%);
+}
+.ak-11{
+  filter: invert(66%) sepia(62%) saturate(391%) hue-rotate(109deg) brightness(96%) contrast(85%);
+}
+.ak-12{
+  filter: invert(91%) sepia(11%) saturate(790%) hue-rotate(56deg) brightness(98%) contrast(89%);
+}
+
+.logo:hover .bgLogos{
+  opacity: 1;
+}
+.logo:hover .ak-1{
+  transform: translateY(calc(1 * var(--translateDis)));
+}
+.logo:hover .ak-2{
+  transform: translateY(calc(2 * var(--translateDis)));
+}
+.logo:hover .ak-3{
+  transform: translateY(calc(3* var(--translateDis)));
+}
+.logo:hover .ak-4{
+  transform: translateY(calc(4* var(--translateDis)));
+}
+.logo:hover .ak-5{
+  transform: translateY(calc(5 * var(--translateDis)));
+}
+.logo:hover .ak-6{
+  transform: translateY(calc(6 * var(--translateDis)));
+}
+.logo:hover .ak-7{
+  transform: translateY(calc(7 * var(--translateDis)));
+}
+.logo:hover .ak-8{
+  transform: translateY(calc(8* var(--translateDis)));
+}
+.logo:hover .ak-9{
+  transform: translateY(calc(9 * var(--translateDis)));
+}
+.logo:hover .ak-10{
+  transform: translateY(calc(10* var(--translateDis)));
+}
+.logo:hover .ak-11{
+  transform: translateY(calc(11* var(--translateDis)));
+}
+.logo:hover .ak-12{
+  transform: translateY(calc(12* var(--translateDis)));
+}
+
+/**H-Navigation Bar*/
+.my-navbar{
+  height: 95px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  margin-left: 50px;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--ak-black);
+  font-family: var(--font-heading-2);
+  font-weight:bold;
+  font-size: 25px;
+}
+
+
+.page{
+  margin-top: 3%;
+  width: 100%;
+}
+
+
+.introduction{
+  align-content: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: calc(80vh - 100px);
+  margin-bottom: 40px;
+}
+.heroTitle{
+  font-family: var(--font-heading-2);
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.heroTitle #hello{
+  font-size: 200%;
+  text-indent: 2%;
+}
+.heroTitle #tagline{
+  font-size: 150%;
+}
+
+.heroTitle h1{
+  font-weight: 800;
+  font-size: 500%;
+  margin-bottom: 5px;
+}
+
+.changeColor{
+  animation-name: colorAnim;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.logoMask{
+  -webkit-mask-image: url('https://arvindg.com/images/ak.svg');
+  mask-image: url('https://arvindg.com/images/ak.svg');
+  -webkit-mask-size: 100%;
+  mask-size:100%;
+  -webkit-mask-position:  center;
+  mask-position:  center;
+  -webkit-mask-border: 2px;
+  mask-border: 2px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat:no-repeat;
+}
+
+.ak-rainbowAnim{
+  width: 500px;
+  text-align: right;
+}
+
+.btn {
+  cursor: pointer;
+
+  color: white;
+  padding: 12px 16px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  align-content: center;
+  border-radius: 30px;
+  box-shadow:  linear-gradient(145deg, #cf3232, #1d8043);
+  animation-name: backgroundColorAnim;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}.btn::after{
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  border-radius: 15px;
+  color: var(--ak-black)
+}
+.btn i {
+  padding-left: 10px;
+  height: 100%;
+  font-size: 16px;
+}
+.center-heading{
+  display: flex;
+  position: relative;
+  bottom: 0;
+  padding: 5px;
+  justify-content: center;
+}
+h2{
+  font-family: var(--font-heading-2);
+  margin: 0;
+}
+
+.horizontal-list{
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.horizontal-list ul{
+  padding: 0;
+}
+
+.horizontal-list ul li{
+  list-style: none;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+  align-self: center;
+  text-align:center;
+ }
+.horizontal-list ul li img{
+  height: 70%;
+}
+
+section{
+  height:100%;
+  min-height: 100vh;
+  width:100%;
+  padding-top: 35px;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing:border-box;
+}
+.intro-sec{
+  padding-top: 15px;
+  min-height: 60vh;
+}
+h3{
+  font-size: x-large;
+  text-align: center;
+}
+.card-shadow{
+  padding: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border-radius: 50px;
+  background: #ededed;
+  box-shadow:  20px 20px 60px #c9c9c9,
+               -20px -20px 60px #ffffff;
+  align-items: center;
+  min-width: 200px;
+}
+
+.big-text p {
+  text-align: center;
+  font-size: 20px;
+}
+.about-me p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.devicon ul li{
+  vertical-align: middle;
+}
+.devicon ul li i{
+  font-size: 70px;
+  color:var(--ak-black)
+}
+
+.devicon ul li h3{
+  padding-top: 15px;
+  font-size: 25px;
+  color:var(--ak-black)
+}
+.devicon ul li p{
+  font-size: 25px;
+  color:var(--ak-black)
+}
+
+/**F-Bar*/
+.footer{
+  background-color: var(--ak-black);
+  color: azure;
+
+  display: flex;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+  font-weight: 300;
+  align-items: center;
+  position: relative;
+  height: 90px;
+  width: 100%;
+  bottom: 0%;
+
+}
+.siteAuthor{
+  padding-left: 40px;
+  display: inline-block;
+  font-family:var(--font-comfortaa);
+  font-weight: 700;
+}
+.siteAuthor p i{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.socials{
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+  font-family:var(--font-comfortaa);
+  font-weight: 300;
+}
+.icons{
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+
+}
+.icons a{
+  text-decoration: none;
+}
+.iconColor-1 a{
+  color: var(--ak-beige);
+  font-size: 20px;
+}
+.iconColor-2 a{
+  color: var(--ak-black);
+  font-size: 25px;
+}
+.reachOut{
+  flex: 1;
+  text-align: left;
+  margin-top: 25px;
+  padding-right: 50px;
+  font-family:var(--font-comfortaa);
+  font-weight: 300;
+}
+
+.icons a i{
+  transition: color 0.5s ease;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.icon-01:hover a i{
+  color: var(--githubHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-02:hover a i{
+  color: var(--linkedinHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-03:hover a i{
+  color: var(--youtubeHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-04:hover a i{
+  color: var(--itchioHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-05:hover a i{
+  color: var(--twitterHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+.icon-06:hover a i{
+  color: var(--instaHoverColor);
+  transition: color 0.5s ease-in-out;
+}
+
+@keyframes colorAnim {
+  0%    {color:var(--ak-1-gold)}
+  8%    {color:var(--ak-2-orange)}
+  16%   {color:var(--ak-3-red)}
+  24%   {color:var(--ak-4-neonpink)}
+  32%   {color:var(--ak-5-fuchsia)}
+  40%   {color:var(--ak-6-magenta)}
+  48%   {color:var(--ak-7-darkpurple)}
+  56%   {color:var(--ak-8-purple)}
+  64%   {color:var(--ak-9-darkblue)}
+  72%   {color:var(--ak-10-turquoise)}
+  80%   {color:var(--ak-11-green)}
+  88%   {color:var(--ak-12-lightgreen)}
+  100%  {color:var(--ak-1-gold)}
+
+}
+@keyframes backgroundColorAnim {
+  0%    {background-color:var(--ak-1-gold)}
+  8%    {background-color:var(--ak-2-orange)}
+  16%   {background-color:var(--ak-3-red)}
+  24%   {background-color:var(--ak-4-neonpink)}
+  32%   {background-color:var(--ak-5-fuchsia)}
+  40%   {background-color:var(--ak-6-magenta)}
+  48%   {background-color:var(--ak-7-darkpurple)}
+  56%   {background-color:var(--ak-8-purple)}
+  64%   {background-color:var(--ak-9-darkblue)}
+  72%   {background-color:var(--ak-10-turquoise)}
+  80%   {background-color:var(--ak-11-green)}
+  88%   {background-color:var(--ak-12-lightgreen)}
+  100%  {background-color:var(--ak-1-gold)}
+}
