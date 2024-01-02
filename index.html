@@ -1,110 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-<head id="head"></head>
-<script src="js/head.js"></script>
+<head>
+  <!--*Meta-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--*Github calender-->
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-<!--*Github calender-->
+  <!--*Favicon-->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Arvind Kumar</title>
+
+  <!--*Bootstrap Import-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+
+  <!--*Style Sheet-->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!--*Icon Import-->
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+
+  <!--*Devicon Import-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!--*Google Fonts-->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?
+    family=Comfortaa:wght@300;400;700
+    &family=Krona+One
+    &family=Noto+Sans+JP:wght@600;700;900
+    &family=Noto+Sans+Telugu:wght@600;700
+    &family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700
+    &family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700
+    &family=Space+Mono:wght@400;700
+    &family=Syne:wght@400;600;700;800
+    &display=swap"
+    rel="stylesheet"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Krona+One&family=Noto+Sans+JP:wght@600;700;900&family=Noto+Sans+Telugu:wght@600;700&family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+  </style>
+    
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/dataInjector.js"></script>
+  <!-- <script type="text/javascript" src="https://unpkg.com/imagekit-javascript/dist/imagekit.min.js"></script> -->
+</head>
 
 <body>
   <!--*Header Section-->
-  <div class="header" id="header"></div>
-  <!--*Content Section-->
-  <div class="page">
-    <section id="home" class="intro-sec">
-      <div class="introduction">
-        <div class="heroTitle changeColor">
-          <p id="hello">Hello there! I'm</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+          crossorigin="anonymous">
+  </script>
+
+  <nav id = "header" class = "header navbar navbar-expand-md fixed-top py-4 " data-include="./include/header.html"></nav>
+  
+  <main id ="main">
+    <!--*Content Section-->
+    <div id="home" class="container-fluid px-5 d-flex justify-content-evenly min-vh-100" >
+      <div class="row flex-lg-row-reverse row-cols-2 align-items-center justify-content-xl-between justify-content-center w-100">
+        <div class="logoMask px-0">
+          <img class="ak-rainbowAnim" src="images/wave_rainbow.svg" loading="lazy">
+        </div>
+
+        <div id = "hero" class="changeColor d-flex flex-wrap justify-content-xl-start justify-content-center align-self-xl-center align-self-start col-xl-6 col-10 px-0">
+          <div class="scroll-container">
+            <ul class="scroll-list px-0 text-center text-xl-start">
+              <li id="en" class="scroll-list-item">Hello there! I'm</li>
+              <li id="te" class="scroll-list-item">నమస్తే, నేను</li>
+              <li id="hi" class="scroll-list-item">नमस्ते, मैं हूँ</li>
+              <li id="ja" class="scroll-list-item">こんにちは！私は</li>
+              <li id="de" class="scroll-list-item">Hallo! Ich bin</li>
+              <li id="fr" class="scroll-list-item">Bonjour! je suis</li>
+              <li id="sv" class="scroll-list-item">Hej där! jag är</li>
+              <li id="it" class="scroll-list-item">Ciao! io sono</li>
+              <li id="es" class="scroll-list-item">Hola! soy</li>
+              <li id="pt" class="scroll-list-item">Olá! eu sou</li>
+            </ul>
+          </div>
+          <div class="w-100"></div>
+          
+          <!-- <p>Hello there! I'm</p> -->
           <h1>Arvind Kumar</h1>
-          <p id="tagline">Game Developer and Technical Artist</p>
-          <a href="resume.pdf" download target="_blank" rel="noreferrer noopener">
-            <button class="btn">Download Resume<i class="fa-regular fa-circle-down"></i></button>
+          <div class="scroll-container">
+            <ul class="scroll-list-2 px-0 text-center text-xl-start">
+              <li class="scroll-list-item">Game Developer</li>
+              <li class="scroll-list-item">Programmer</li>
+              <li class="scroll-list-item">Designer</li>
+              <li class="scroll-list-item">Artist</li>
+              <li class="scroll-list-item">Maker of things</li>
+              <li class="scroll-list-item">Learner</li>
+              <li class="scroll-list-item">Tech Geek</li>
+            </ul>
+          </div>
+          <!-- <p>Game Developer</p> -->
+          <div class="w-100"></div>
+          <a class="callForActionBtn" href="https://www.youtube.com">
+            <span>View my Resume</span>
+            <i class="fa-regular fa-circle-right"></i>
           </a>
-          <div class="reachOut">
-            <div class="icons iconColor-2">
-              <a id="github" href = "https://github.com/Hikaru11747" alt="Github website" title="Github" target="_blank" rel="noreferrer noopener">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div class="icons iconColor-2">
-              <a id="linkedin" href = "https://linkedin.com/in/arvind-kumar-155430115/" alt="Linkedin website" title="Linkedin" target="_blank" rel="noreferrer noopener">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div class="icons iconColor-2">
-              <a id="itchio" href = "https://arvindkumar.itch.io" alt="itch.io website" title="itch.io" target="_blank" rel="noreferrer noopener">
-                <i class="fa-brands fa-itch-io"></i>
-              </a>
-            </div>
+          <div class="w-100"></div>
+          <div class="social-links">
+            <a class="github" href="https://github.com/Hikaru11747" alt="Github profile" title="Github" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="linkedin" href="https://linkedin.com/in/arvind-kumar-dev" alt="Linkedin profile" title="Linkedin" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="itchio" href="https://arvindkumar.itch.io" alt="itch.io page" title="itch.io" target="_blank" rel="noreferrer noopener">
+              <i class="fa-brands fa-itch-io"></i>
+            </a>
           </div>
         </div>
-        <div class="logoMask">
-          <img class="ak-rainbowAnim" src="images/wave_rainbow.svg">
-        </div>
       </div>
-    </section>
-    <section>
-      <div class="center-heading">
-        <h2>About Me</h2>
+    </div>
+  
+  <div class="container-fluid px-5">
+    <h2 class="text-center pb-4 ">About Me!</h2>
+    <div class="py-5 px-4 card-shadow">
+      <div class="d-flex justify-content-between">
+        <p>Hello There!</p> 
+        <p class="fw-lighter" style="color: #23232322;">General Kenobi!</p>
       </div>
-      <div class="about-me card-shadow">
-        <p> I am a Game developer based out of Hyderabad, India and I am currently
-          building games using Unity and Unreal,
-          I am pursuing my Bachalor of Science degree in Computer Science and
-          Game Development at ICAT Design and Media college, Hyderabad.<br><br>
-
-          From when I can remember I was facinated by computers and their inner workings
-          which led me into Game development, I like to think I have learned a lot and
-          still want to learn even more!<br><br>
-
-          Take a look at my <a href="https://arvindkumar.itch.io">portfolio</a> 
-          and feel free to <a href="mailto:arvindkumarlym@gmail.com">contact me</a> if you like my works!
+      <p>
+        Welcome to my <span class="text-body-secondary">domain</span>... I'm Arvind a Game Developer by day and a weird ball of passions at night!
+          I have experience in Unreal, Unity, and some DCC applications.<br><br>
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I am currently working as a Junior programmer at <a
+          href="https://www.linkedin.com/company/voidpeak-games/">Voidpeak Games</a>
+          and I am also posting my findings and experiences at my <a href="https://blog.arvindg.com">blog</a> <br><br>
+          
+          Take a look at my <a href="https://arvindkumar.itch.io">projects</a>
+          and if you like to have a chat with me feel free to <a href="mailto:arvindkumarlym@gmail.com">contact me</a>
+        </p>
+    </div>
+  </div>
+  <div>
+    <div class="center-heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-me card-shadow">
+        <p>Hello there! <s>General Kenobi</s>
+          <br><br>
+          
+          I have experience in Unreal, Unity, and some DCC applications.<br><br>
+          
+          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
+          
+          I am currently working as a Junior programmer at <a
+          href="https://www.linkedin.com/company/voidpeak-games/">Voidpeak Games</a>
+          and I am also posting my findings and experiences at my <a href="https://blog.arvindg.com">blog</a> <br><br>
+          
+          Take a look at my <a href="https://arvindkumar.itch.io">projects</a>
+          and if you like to have a chat with me feel free to <a href="mailto:arvindkumarlym@gmail.com">contact me</a>
         </p>
       </div>
-
+      
       <div class="center-heading">
         <h2>My Interests</h2>
       </div>
       <div class="center-heading big-text">
-        <p>At the moment, these are the fields I am most interested in:</p>
+        <p>These are the fields I am most interested in:</p>
       </div>
       <div class="card-shadow">
         <div class="horizontal-list">
           <ul>
             <li>
-              <img src="images/skillz/SVG/gamedev.svg">
+              <img src="images/skills/gamedev.svg">
               <h3>Game Development</h3>
             </li>
             <li>
-              <img src="images/skillz/SVG/graphics.svg">
+              <img src="images/skills/graphics.svg">
               <h3>Computer Graphics</h3>
             </li>
             <li>
-              <img src="images/skillz/SVG/webdev.svg">
+              <img src="images/skills/webdev.svg">
               <h3>Web Development</h3>
             </li>
             <li>
-              <img src="images/skillz/SVG/motiondes.svg">
+              <img src="images/skills/motiondes.svg">
               <h3>Motion Design</h3>
             </li>
           </ul>
         </div>
       </div>
-
+      
       <div class="center-heading">
         <h2>My Skills</h2>
       </div>
       <div class="center-heading big-text">
-        <p>I love to learn new skills and improve on them,
-          these are the technical tools and technologies I am most famillar with:
+        <p>I love to pick up skills and improve on them,
+          these are the technical tools and technologies that I am most famillar with:
         </p>
       </div>
       <div class="card-shadow">
         <div class="center-heading big-text">
-          <p><strong>Computer Languages</strong></p>
+          <p><strong>Programming Languages</strong></p>
         </div>
         <div class="horizontal-list devicon">
           <ul>
@@ -123,15 +233,17 @@
             <li>
               <i class="devicon-html5-plain"></i>
               <h3>HTML</h3>
+              <!--<i>shh... its not a programming language</i>-->
             </li>
             <li>
               <i class="devicon-css3-plain"></i>
               <h3>CSS</h3>
+              <!--<i>shh... its not a programming language</i>-->
             </li>
           </ul>
         </div>
       </div>
-
+      
       <div class="card-shadow">
         <div class="center-heading big-text">
           <p><strong>Development Tools</strong></p>
@@ -139,24 +251,24 @@
         <div class="horizontal-list devicon">
           <ul>
             <li>
-              <i class="devicon-unity-original"></i>
-              <h3>Unity</h3>
-            </li>
-            <li>
               <i class="devicon-unrealengine-original"></i>
               <h3>Unreal</h3>
             </li>
             <li>
-              <i class="devicon-github-original"></i>
-              <h3>Github</h3>
+              <i class="fa-brands fa-unity"></i>
+              <h3>Unity</h3>
+            </li>
+            <li>
+              <i class="devicon-visualstudio-plain"></i>
+              <h3>Visual Studio</h3>
             </li>
             <li>
               <i class="devicon-vscode-plain"></i>
               <h3>VSCode</h3>
             </li>
             <li>
-              <i class="devicon-visualstudio-plain"></i>
-              <h3>Visual Studio</h3>
+              <i class="devicon-github-original"></i>
+              <h3>Github</h3>
             </li>
           </ul>
         </div>
@@ -205,30 +317,20 @@
           </ul>
         </div>
       </div>
+    </div>
+    
+  </main>
+  
+  <footer class="footer container-fluid d-flex 
+    align-items-center 
+    justify-content-center
+    justify-content-sm-between
+    flex-sm-row
+    flex-column
+    px-5 py-4" data-include="./include/footer.html">
+  </footer>
 
-      <div class="card-shadow">
-        <div class="center-heading big-text">
-          <p><strong>Github stats</strong></p>
-        </div>
-        <!-- Prepare a container for your calendar. -->
-        <div class="calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!--*Footer Section-->
-  <div class="footer" id="footer"></div>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
-  <script src="js/app.js"></script>
-  <!--*Github calender-->
-  <script>
-    //GitHubCalendar(".calendar", "your-username");
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "Hikaru11747", { responsive: true });
-  </script>
-  <!--*Github calender-->
 </html>
