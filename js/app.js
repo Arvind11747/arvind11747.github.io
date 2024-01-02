@@ -1,7 +1,6 @@
 window.onscroll = function () { stickUp()};
 
-    var header = document.getElementById("header");
-    var sticky = header.offsetTop;
+    var sticky = document.getElementsByName('header')[0].offsetTop;
 
 function stickUp() {
     if (window.pageYOffset > sticky) {

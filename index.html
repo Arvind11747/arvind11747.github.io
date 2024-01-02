@@ -31,27 +31,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   <!--*Google Fonts-->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?
-    family=Comfortaa:wght@300;400;700
-    &family=Krona+One
-    &family=Noto+Sans+JP:wght@600;700;900
-    &family=Noto+Sans+Telugu:wght@600;700
-    &family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700
-    &family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700
-    &family=Space+Mono:wght@400;700
-    &family=Syne:wght@400;600;700;800
-    &display=swap"
-    rel="stylesheet"> -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Krona+One&family=Noto+Sans+JP:wght@600;700;900&family=Noto+Sans+Telugu:wght@600;700&family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
   </style>
-    
-
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/dataInjector.js"></script>
   <!-- <script type="text/javascript" src="https://unpkg.com/imagekit-javascript/dist/imagekit.min.js"></script> -->
 </head>
 
@@ -61,15 +43,55 @@
           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
           crossorigin="anonymous">
   </script>
-
-  <nav id = "header" class = "header navbar navbar-expand-md fixed-top py-4 " data-include="./include/header.html"></nav>
   
+  <nav id = "header" class = "header navbar navbar-expand-md fixed-top py-4">
+    <div class="container-fluid px-5">
+      <!--*Logo-->
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img id="ak-12" src="images/ak.svg">
+              <img id="ak-11" src="images/ak.svg">
+              <img id="ak-10" src="images/ak.svg">
+              <img id="ak-9" src="images/ak.svg">
+              <img id="ak-8" src="images/ak.svg">
+              <img id="ak-7" src="images/ak.svg">
+              <img id="ak-6" src="images/ak.svg">
+              <img id="ak-5" src="images/ak.svg">
+              <img id="ak-4" src="images/ak.svg">
+              <img id="ak-3" src="images/ak.svg">
+              <img id="ak-2" src="images/ak.svg">
+              <img id="ak-1" src="images/ak.svg">
+              <img id="mainLogo" src="images/ak.svg">
+          </a>
+      </div>
+      
+      <label for="check" class="menuButton navbar-toggler">
+          <input id="check" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="top"></span> 
+          <span class="mid"></span>
+          <span class="bot"></span>
+          
+      </label>
+
+      <!--*Navigation list-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-3"><a class="nav-link active" href="#home" aria-current="page" id="homeNav">Home</a></li>
+              <li class="nav-item pe-3"><a class="nav-link" href="https://arvindkumar.itch.io">Portfolio</a></li>
+              <li class="nav-item pe-3"><a class="nav-link" href="https://blog.arvindg.com">Blogs</a></li>
+              <li class="nav-item pe-3"><a class="nav-link" href="mailto:arvindkumarlym@gmail.com">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <script type="text/javascript" src="js/app.js"></script>
+
   <main id ="main">
     <!--*Content Section-->
     <div id="home" class="container-fluid px-5 d-flex justify-content-evenly min-vh-100" >
       <div class="row flex-lg-row-reverse row-cols-2 align-items-center justify-content-xl-between justify-content-center w-100">
         <div class="logoMask px-0">
-          <img class="ak-rainbowAnim" src="images/wave_rainbow.svg" loading="lazy">
+          <img class="ak-rainbowAnim" src="images/wave_rainbow.svg">
         </div>
 
         <div id = "hero" class="changeColor d-flex flex-wrap justify-content-xl-start justify-content-center align-self-xl-center align-self-start col-xl-6 col-10 px-0">
@@ -127,31 +149,44 @@
   <div class="container-fluid px-5">
     <h2 class="text-center pb-4 ">About Me!</h2>
     <div class="py-5 px-4 card-shadow">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-start">
         <p>Hello There!</p> 
-        <p class="fw-lighter" style="color: #23232322;">General Kenobi!</p>
+        <p class="fw-lighter" style="color: #23232322;">&nbsp;General Kenobi!</p>
       </div>
       <p>
-        Welcome to my <span class="text-body-secondary">domain</span>... I'm Arvind a Game Developer by day and a weird ball of passions at night!
-          I have experience in Unreal, Unity, and some DCC applications.<br><br>
-          
-          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
-          
-          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
-          
-          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
-          
-          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
-          
-          I enjoy bike rides, drawing, 3D-design, graphics programming, and other silly things...
-          
-          I am currently working as a Junior programmer at <a
-          href="https://www.linkedin.com/company/voidpeak-games/">Voidpeak Games</a>
-          and I am also posting my findings and experiences at my <a href="https://blog.arvindg.com">blog</a> <br><br>
-          
-          Take a look at my <a href="https://arvindkumar.itch.io">projects</a>
-          and if you like to have a chat with me feel free to <a href="mailto:arvindkumarlym@gmail.com">contact me</a>
-        </p>
+        Welcome to my <span class="changeColor">domain...</span> I'm Arvind a Game Developer by day 🌞
+        and a weird bundle of passions at night!
+      </p>
+      <p>
+        Born and raised in Hyderabad, India, I was an energetic guy from my childhood and was 
+        curious about everything around me...
+        Toys🤖? dismantle and look at its inner workings🪛, DC Motor⚙️? Stick it in a AC Plug!⚡
+        <br>
+        Overtime I was introduced into the world of computers and was almost immediately hooked,
+        so did grew my love for video games, which in turn made me push into a career
+        as a game developer.
+      </p>
+      <p>
+        Over the last 3 years I have become profecient in C#, C++, and I also keep
+        playing with Python, HTML, CSS, JS and other computer languages in my free time...   
+      </p>
+      <p>
+        I have gained experience in Unity, Unreal and various DCC applications 
+        such as Blender, Maya, After Effects, Illustrator, Photoshop, etc.
+      </p>
+      <p>
+        I also involve myself in graphics programming🫖, 3D-design🍩, motion design✨, 
+        writing about my findings and experiences at my <a href="https://blog.arvindg.com">blog</a>
+        , and other interesting things...
+      </p>
+      <p>
+        Currently I am working as a Junior Programmer at 
+        <a href="https://www.linkedin.com/company/voidpeak-games/">Voidpeak Games</a> 
+        and I am also <br><br>
+      
+        Take a look at my <a href="https://arvindkumar.itch.io">projects</a>
+        and if you like to have a chat with me feel free to <a href="mailto:arvindkumarlym@gmail.com">contact me</a>
+      </p>
     </div>
   </div>
   <div>
@@ -327,10 +362,43 @@
     justify-content-sm-between
     flex-sm-row
     flex-column
-    px-5 py-4" data-include="./include/footer.html">
-  </footer>
+    px-5 py-4"">
+    <!--*Name and Copyright-->
+    <div class="siteAuthor">
+      <span>
+          Made with ❤️ by Arvind Kumar - <span id="current-year"></span>
+      </span>
+    </div>
+    <!--*Social Links-->
+    <div class="social-links">
+      <!-- <span>
+          Find me at:
+      </span> -->
+      <a id="github" href="https://github.com/Hikaru11747" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-github"></i>
+      </a>
+      <a id="linkedin" href="https://linkedin.com/in/arvind-kumar-dev/" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a id="youtube" href="https://www.youtube.com/@Arvind-dev" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a id="itchio" href="https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-itch-io"></i>
+      </a>
+      <a id="twitter" href="https://www.twitter.com/HikatoKage117" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a id="instagram" href="https://www.instagram.com/lyricmation/" target="_blank" rel="noreferrer noopener">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
 
-  <script type="text/javascript" src="js/app.js"></script>
+    <script>
+      const year = document.querySelector('#current-year');
+      year.innerHTML = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 
 </html>
