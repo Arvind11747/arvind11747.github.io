@@ -1,11 +1,8 @@
-window.onscroll = function () { stickUp()};
-
-    var sticky = document.getElementsByName('header')[0].offsetTop;
-
-function stickUp() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if (scroll > 10) {
+        document.querySelector(".header").classList.add("headerShadow");
     } else {
-        header.classList.remove("sticky");
+        document.querySelector(".header").classList.remove("headerShadow");
     }
-}
+});

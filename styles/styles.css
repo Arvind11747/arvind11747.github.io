@@ -95,7 +95,7 @@ Header----------------------------------------------->
   background-color: var(--lightModeBGcolor);
   transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease-in-out;
 }
-.sticky {
+.headerShadow {
   box-shadow: 0px 3px 18px var(--boxShadowAcolor);
   transition: box-shadow 0.5s ease-in-out,background-color 0.8s ease-in-out;
 }
@@ -439,12 +439,27 @@ h2{
 }
 
 .card-shadow{
+  font-size: 18px;
   border-radius: 50px;
   background: var(--lightModeBGcolor);
   box-shadow:  9px 9px 18px var(--boxShadowAcolor),
                -9px -9px 18px var(--boxShadowBcolor);
 }
-
+.emoji{
+  font-size: 22px;
+}
+#page-pill .nav{
+  font-family: var(--font-heading-2);
+  font-weight:200;
+  font-size: 15px;
+}
+#page-pill .nav-link{ 
+  background: none;
+  color: gray;
+}
+#page-pill .nav-link.active{ 
+  color: var(--ak-black);
+}
 /**F-Bar*/
 .footer{
   font:500 var(--font-text);
