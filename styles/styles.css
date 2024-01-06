@@ -261,6 +261,7 @@ input[type]:checked ~ span.bot {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
   transition: transform 500ms;
+  color: var(--native-color);
 }
 
 .icon--moon {
