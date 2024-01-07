@@ -273,7 +273,6 @@ Hero----------------------------------------------->
 #hero .scroll-list{
   text-align: left;
   list-style: none;
-  font-weight: 900;
   will-change: transform;
   -webkit-animation: change 35s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
   animation: change 35s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
@@ -292,12 +291,15 @@ Hero----------------------------------------------->
 }
 #hero .scroll-list #te{
   font-family: 'Noto Sans Telugu', sans-serif;
+  font-weight: 700;
 }
 #hero .scroll-list #ja{
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
 }
 #hero .scroll-list #hi{
   font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
 }
 #hero p{
   margin:0;

@@ -1,6 +1,3 @@
-// const year = document.querySelector('#current-year');
-// year.innerHTML = new Date().getFullYear();
-
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     if (scroll > 10) {
@@ -10,7 +7,56 @@ window.addEventListener("scroll", (event) => {
     }
 });
 
+/*----------------Theme Selector--------------*/
 const toggleSwitch = document.querySelector('.toggle input[type="checkbox"]');
+
+function setColorScheme(scheme) {
+    switch(scheme){
+        case 'dark':
+        toggleSwitch.checked = true;
+        document.documentElement.setAttribute('data-theme', 'dark');
+        // console.log('dark');
+        
+        break;
+        case 'light':
+        toggleSwitch.checked = false;
+        document.documentElement.setAttribute('data-theme', 'light');
+
+        // console.log('light');
+        // Light
+        break;
+        default:
+        // Default
+        toggleSwitch.checked = false;
+        document.documentElement.setAttribute('data-theme', 'light');   
+
+        // console.log('default');
+        break;
+    }
+    toggleSwitch.addEventListener('change', switchTheme, false);
+}
+
+function getPreferredColorScheme() {
+if (window.matchMedia) {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+    return 'dark';
+    } else {
+    return 'light';
+    }
+}
+return 'light';
+}
+
+function updateColorScheme(){
+    setColorScheme(getPreferredColorScheme());
+}
+
+if(window.matchMedia){
+var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+colorSchemeQuery.addEventListener('change', updateColorScheme);
+}
+
+updateColorScheme();
 
 function switchTheme(e) {
     if (e.target.checked) {
@@ -19,11 +65,12 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'light');
     }
 }
+/*----------------Theme Selector--------------*/
 
-toggleSwitch.addEventListener('change', switchTheme, false);
 
 const year = document.querySelector('#current-year');
 year.innerHTML = new Date().getFullYear();
+
 
 birthdayQuery();
 
