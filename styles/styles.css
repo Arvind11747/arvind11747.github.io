@@ -1,6 +1,5 @@
 :root {
   --translateDis: 2.2px;
-
   /*AK Palatte*/
   --ak-black: #232323;
   --ak-beige: #fff3d5;
@@ -17,11 +16,9 @@
   --ak-10-turquoise: #229aa2;
   --ak-11-green: #48cea2;
   --ak-12-lightgreen: #bee8b4;
-
   /*Fonts*/
   --font-heading:'Krona One', sans-serif;
   --font-codeText: 'Space Mono', monospace;
-
   /*LightMode*/
   --bg-color: #f1f1f8;
   --font-color: #000000;
@@ -31,11 +28,9 @@
   --gradientDotsColor: rgba(8, 8, 8, 0.075);
   --high-shadow: #cdcdd3;
   --low-shadow: #ffffff; 
-
   --ak-logo-filter: invert(13%) sepia(3%) saturate(2%) hue-rotate(314deg) brightness(94%) contrast(96%);
 }
 [data-theme=dark]{
-  /*DarkMode*/
   --bg-color: #232323; 
   --font-color: #ffffff;
   --native-color: #f1f1f8;
@@ -44,31 +39,24 @@
   --gradientDotsColor: rgba(250, 250, 250, 0.062);
   --high-shadow: #1e1e1e;
   --low-shadow: #282828;
-
   --ak-logo-filter: invert(97%) sepia(2%) saturate(547%) hue-rotate(201deg) brightness(99%) contrast(96%);
 }
-
 html{
   scroll-behavior:auto;
 }
 body{
   padding-top: 64px;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-color);
   color: var(--font-color);
-  background-image: radial-gradient( var(--gradientDotsColor), 2px, transparent 0);
+  background: var(--bg-color) radial-gradient( var(--gradientDotsColor), 2px, transparent 0) -5px -5px;
   background-size: 30px 30px;
-  background-position: -5px -5px;
-
 }
 /* 
-
 div,nav,button,i,p,h1,img,span,header,footer{
   border: solid;
   border-width: 1px;
   border-color: red;
 } */
-
 /**
 Header----------------------------------------------->
 */
@@ -78,7 +66,7 @@ header{
 }
 .headerShadow {
   box-shadow: 0px 3px 18px var(--high-shadow);
-  transition: box-shadow 0.5s ease-in-out,background-color 0.8s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease-in-out;
 }
 #logo {
   cursor: pointer;
@@ -94,7 +82,6 @@ header{
   filter: var(--ak-logo-filter);
 }
 @media only screen and (min-width:1000px) {
-  /**H-AK Logo*/
   #ak-1{
     filter: invert(79%) sepia(92%) saturate(1190%) hue-rotate(328deg) brightness(102%) contrast(101%);
   }
@@ -175,14 +162,11 @@ header{
   #logo:hover #ak-12{
     transform: translateY(calc(12* var(--translateDis)));
   }
-
 }
 /*<-----------------Nav------------------->*/
 .navbar-nav {
   text-align: center;
-  font-family: var(--font-heading);
-  font-weight:bold;
-  font-size: 20px;
+  font: bold 20px var(--font-heading);
 }
 #header .nav-link{ 
   color: var(--secondary-font-color)!important;
@@ -193,31 +177,59 @@ header{
 #header .nav-link.active{ 
   color: var(--native-color)!important;
 }
-.hamMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10%;
+.toggle {
+  display: grid;
+  place-items: center;
+}
+.input {
+  display: none;
+}
+.theme-icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+  color: var(--native-color);
+}
+.theme-icon#moon {
+  transition-delay: 200ms;
+}
+.theme-icon#sun {
+  transform: scale(0);
+}
+#switch:checked + #moon {
+  transform: rotate(360deg) scale(0);
+}
+#switch:checked ~ #sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+.square-button{
   width: 2.0em;
   height: 2.0em;
   border-radius: 0.5em;
   background: var(--bg-color);
   border: none;
-  transition: all .3s;
+  transition: all .3s, box-shadow 0s;
   box-shadow: 5px 5px 8px var(--high-shadow),
              -5px -5px 8px var(--low-shadow);
 }
-.hamMenu:active {
+.square-button:active {
   color: #666;
   box-shadow: inset 4px 4px 8px var(--high-shadow),
-             inset -4px -4px 8px var(--low-shadow);
+  inset -4px -4px 8px var(--low-shadow);
 }
 input[type = "checkbox"] {
   -webkit-appearance: none;
   appearance: none;
   display: none;
   visibility: hidden;
+}
+.hamMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
 }
 .hamMenu span {
   width: 28.03px;
@@ -240,46 +252,6 @@ input[type]:checked ~ span.bot {
   transform: translateX(6.15px) translateY(-1.8px)rotate(45deg);
   width: 10px;
 }
-
-.toggle {
-  display: grid;
-  place-items: center;
-  width: 2.0em;
-  height: 2.0em;
-  border-radius: 0.5em;
-  background: var(--bg-color);
-  transition: all .3s;
-  box-shadow: 5px 5px 8px var(--high-shadow),
-             -5px -5px 8px var(--low-shadow);
-}
-
-.input {
-  display: none;
-}
-
-.icon {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  transition: transform 500ms;
-  color: var(--native-color);
-}
-
-.icon--moon {
-  transition-delay: 200ms;
-}
-
-.icon--sun {
-  transform: scale(0);
-}
-
-#switch:checked + .icon--moon {
-  transform: rotate(360deg) scale(0);
-}
-
-#switch:checked ~ .icon--sun {
-  transition-delay: 200ms;
-  transform: scale(1) rotate(360deg);
-}
 /**
 <-----------------------------------------------Header
 Hero----------------------------------------------->
@@ -289,28 +261,26 @@ Hero----------------------------------------------->
   font-weight: 800;
 }
 #hero h1{
-
   font-weight: 800;
   font-size: 80px;
 }
 #hero .scroll-container{
-  margin:0;
-  margin-bottom: 10px;
-  font-size: 120%;
-  font-weight: 600;
+  margin:0px 0px 0px 10px;
   overflow: hidden;
   height: 40px;
 }
 #hero .scroll-list{
   text-align: left;
   list-style: none;
-
+  font-weight: 900;
+  will-change: transform;
   -webkit-animation: change 35s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
   animation: change 35s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 #hero .scroll-list-2{
   text-align: left;
   list-style: none;
+  will-change: transform;
   -webkit-animation: change-2 15s infinite;
   animation: change-2 15s  infinite;
 }
@@ -321,15 +291,12 @@ Hero----------------------------------------------->
 }
 #hero .scroll-list #te{
   font-family: 'Noto Sans Telugu', sans-serif;
-  font-weight: 900;
 }
 #hero .scroll-list #ja{
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 900;
 }
 #hero .scroll-list #hi{
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 900;
 }
 #hero p{
   margin:0;
@@ -355,6 +322,7 @@ Hero----------------------------------------------->
   transform: scale(1.1, 1.1);
 }
 .changeColor{
+  will-change: color;
   animation: colorAnim 20s infinite;
 }
 #logoMask{
@@ -433,29 +401,23 @@ Content----------------------------------------------->
 h2{
   font-family: var(--font-heading);
 }
-
 #card-box{
   font-size: 18px;
   border-radius: 50px;
 }
-
 .card-shadow{
   background: var(--bg-color);
   box-shadow:  9px 9px 15px var(--high-shadow),
                -9px -9px 15px var(--low-shadow);
 }
-
 #emoji{
   font-size: 22px;
 }
-
 .text-body-tertiary{
   color:#747474 !important;
 }
 #tech-stack .nav{
-  font-family: var(--font-heading);
-  font-weight:200;
-  font-size: 15px;
+  font: 200 15px var(--font-heading);
 }
 #tech-stack .nav-link{ 
   background: none;

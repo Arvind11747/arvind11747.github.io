@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
   <!--*Meta-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,&nbsp;initial-scale=1">
-
+  <meta name="description" content="Arvind Kumar's personal site for showcase of portfolio and other experiments">
   <!--*Favicon-->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <title>Arvind Kumar</title>
@@ -16,7 +15,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   <!--*Style Sheet-->
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet preload" href="styles/styles.css" as="style" />
 
   <!--*Icon Import-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -28,79 +27,66 @@
 
   <!--*Google Fonts-->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Krona+One&family=Noto+Sans+JP:wght@600;700;900&family=Noto+Sans+Telugu:wght@600;700&family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Noto+Sans+JP:wght@600;700;900&family=Noto+Sans+Telugu:wght@600;700&family=Noto+Sans:ital,wght@0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
   </style>
   <!-- <script type="text/javascript" src="https://unpkg.com/imagekit-javascript/dist/imagekit.min.js"></script> -->
 </head>
-
 <body>
-  <!--*Header Section-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <header id="header" class="navbar navbar-expand-md fixed-top py-4">
     <div class="container-fluid px-5">
       <!--*Logo-->
-        <div id="logo" >
-          
-          <a class="navbar-brand" href="#top">
-            <img id="ak-12" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-11" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-10" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-9" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-8" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-7" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-6" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-5" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-4" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-3" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-2" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="ak-1" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
-            <img id="mainLogo" src="images/ak.svg" alt="Arvind Kumar brand logo">
-          </a>
-        </div>
-
-        <label for="check" class="hamMenu navbar-toggler">
-          <input id="check" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="top"></span>
-          <span class="mid"></span>
-          <span class="bot"></span>
-        </label>
-        
-        <!--*Navigation list-->
-        <div  id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav justify-content-center">
-            <li class="nav-item mb-xl-0 pt-xl-0 pt-4 mb-4 me-xl-5 pe-3 align-self-center">
-                <label class="toggle" for="switch">
-                    <input id="switch" class="input" type="checkbox">
-                    <div class="icon icon--moon">
-                      <i class="fa-solid fa-moon"></i>
-                    </div>
-                
-                    <div class="icon icon--sun">
-                      <i class="fa-solid fa-sun"></i>
-                    </div>
-                </label>
-            </li>
-            <li class="nav-item pe-3"><a class="nav-link active" href="#top" aria-current="page" id="homeNav">Home</a></li>
-            <li class="nav-item pe-3"><a class="nav-link" href="https://arvindkumar.itch.io">Portfolio</a></li>
-            <li class="nav-item pe-3"><a class="nav-link" href="https://blog.arvindg.com">Blogs</a></li>
-            <li class="nav-item pe-3"><a class="nav-link" href="mailto:arvindkumarlym@gmail.com">Contact</a></li>
-          </ul>
-        </div>
+      <div id="logo" >
+        <a class="navbar-brand" href="#top">
+          <img id="ak-12" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-11" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-10" src="images/ak.svg" alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-9" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-8" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-7" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-6" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-5" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-4" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-3" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-2" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="ak-1" src="images/ak.svg"  alt="Background logo, which does a flow effect when hovered on the logo">
+          <img id="mainLogo" src="images/ak.svg" alt="Arvind Kumar brand logo">
+        </a>
       </div>
+      <label for="check" class="hamMenu square-button navbar-toggler">
+        <input id="check" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="top"></span>
+        <span class="mid"></span>
+        <span class="bot"></span>
+      </label>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item mb-xl-0 pt-xl-0 pt-4 mb-4 me-xl-5 pe-3 align-self-center">
+              <label class="toggle square-button" for="switch">
+                  <input id="switch" class="input" type="checkbox">
+                  <div id="moon" class="theme-icon">
+                    <i class="fa-solid fa-moon"></i>
+                  </div>
+                  <div id="sun" class="theme-icon">
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+              </label>
+          </li>
+          <li class="nav-item py-xl-2 py-5 pe-3"><a class="nav-link active" href="#top" aria-current="page" id="homeNav">Home</a></li>
+          <li class="nav-item py-xl-2 py-5 pe-3"><a class="nav-link" href="https://arvindkumar.itch.io">Portfolio</a></li>
+          <li class="nav-item py-xl-2 py-5 pe-3"><a class="nav-link" href="https://blog.arvindg.com">Blogs</a></li>
+          <li class="nav-item py-xl-2 py-5 pe-3"><a class="nav-link" href="mailto:arvindkumarlym@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
-
   <main id="main">
-    <!--*Content Section-->
     <div id="home" class="container-fluid px-5 d-flex justify-content-evenly min-vh-100">
       <div class="row flex-lg-row-reverse row-cols-2 align-items-center justify-content-xl-between justify-content-center w-100">
         <div id="logoMask" class="px-0">
-          <img id="ak-rainbowAnim" src="images/wave_rainbow.svg">
+          <img id="ak-rainbowAnim" src="images/wave_rainbow.svg" alt="A colorful wave in the shape of the AK logo.">
         </div>
-
         <div id="hero" class="changeColor d-flex flex-wrap justify-content-xl-start justify-content-center align-self-xl-center align-self-start col-xl-6 col-10 px-0">
           <div class="scroll-container">
             <ul class="scroll-list px-0 text-center text-xl-start">
@@ -133,7 +119,7 @@
           </div>
           <!-- <p>Game Developer</p> -->
           <div class="w-100"></div>
-          <a id="callForAction" href="https://www.youtube.com">
+          <a id="callForAction" href="https://rxresu.me/arvindkumarlym/arvindkumarmain">
             <span>View my Resume</span>
             <i class="fa-regular fa-circle-right"></i>
           </a>
@@ -155,7 +141,6 @@
         </div>
       </div>
     </div>
-
     <div id="about-me" class="container-fluid px-5 pb-5">
       <h2 class="text-center pb-4">About Me!</h2>
       <div id="card-box" class="card-shadow py-5 px-4">
@@ -194,22 +179,21 @@
           I also hobby myself in graphics programming<span id="emoji">🫖</span>,&nbsp;3D-modelling
           <span id="emoji">🍩</span>,&nbsp;Web-design<span id="emoji">🕸️</span>,&nbsp;Motion-design
           <span id="emoji">💥</span>,&nbsp;and writing about my findings and experiences at my
-          <a class="fw-bold" href="https://blog.arvindg.com">blog</a>,
+          <a class="fw-bold" href="https://blog.arvindg.com" aria-label="Vist the page to read my blogs">blog</a>,
           <!-- <br>and other interesting things...
           <span class="emoji">✨</span> -->
         </p>
         <p>
           Currently I am working as a Junior Programmer at
-          <a class="fw-bold" href="https://www.linkedin.com/company/voidpeak-games/">Voidpeak Games</a>
+          <a class="fw-bold" href="https://www.linkedin.com/company/voidpeak-games/" aria-label="Vist my employer">Voidpeak Games</a>
         </p>
         <p>
-          Take a look at my <a class="fw-bold" href="https://arvindkumar.itch.io">projects</a>
+          Take a look at my <a class="fw-bold" href="https://arvindkumar.itch.io" aria-label="Vist my itch.io page">projects</a>
           and if you like to have a chat with me feel free to
-          <a class="fw-bold" href="mailto:arvindkumarlym@gmail.com">contact me</a>
+          <a class="fw-bold" href="mailto:arvindkumarlym@gmail.com" aria-label="Click to contact me through email">contact me</a>
         </p>
       </div>
     </div>
-
     <div id="interest-stack" class="container-fluid px-5 pb-5">
       <h2 class="text-center pt-5 pb-2">My Interest Stack!</h2>
       <div class="d-flex justify-content-center pb-4">
@@ -224,26 +208,25 @@
         <div>
           <div class="row row-cols-xl-4 row-cols-1">
             <div class="d-flex flex-wrap justify-content-center">
-              <img style="width: 350px;" src="images/skills/gamedev.svg">
+              <img style="width: 350px;" src="images/skills/gamedev.svg" alt="A picture representing a programming IDE and game development icon.">
               <p class="pt-4 pb-3 fs-5">Game Development</p>
             </div>
             <div class="d-flex flex-wrap justify-content-center">
-              <img style="width: 350px;" src="images/skills/graphics.svg">
+              <img style="width: 350px;" src="images/skills/graphics.svg" alt="A picture representing a programming IDE and graphics programming icon.">
               <p class="pt-4 pb-3 fs-5">Computer Graphics</p>
             </div>
             <div class="d-flex flex-wrap justify-content-center">
-              <img style="width: 350px;" src="images/skills/webdev.svg">
+              <img style="width: 350px;" src="images/skills/webdev.svg" alt="A picture representing a programming IDE and web developent icon.">
               <p class="pt-4 pb-3 fs-5">Web Development</p>
             </div>
             <div class="d-flex flex-wrap justify-content-center">
-              <img style="width: 350px;" src="images/skills/motiondes.svg">
+              <img style="width: 350px;" src="images/skills/motiondes.svg" alt="A picture representing a tool to create motion graphics">
               <p class="pt-4 pb-3 fs-5">Motion Design</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div id="tech-stack" class="container-fluid px-5 pb-5">
       <h2 class="text-center pt-5 pb-2">My Tech Stack!</h2>
       <div class="d-flex justify-content-center">
@@ -357,7 +340,6 @@
       </div>
     </div>
   </main>
-
   <footer id="footer" class="container-fluid d-flex flex-sm-row flex-column align-items-center justify-content-center justify-content-sm-between px-5 py-4">
     <!--*Name and Copyright-->
     <div id="siteAuthor">
@@ -370,27 +352,26 @@
       <!-- <span>
           Find me at:
       </span> -->
-      <a id="github" href="https://github.com/Hikaru11747" target="_blank" rel="noreferrer noopener">
+      <a id="github" aria-label="Github Profile" href="https://github.com/Hikaru11747" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a id="linkedin" href="https://linkedin.com/in/arvind-kumar-dev/" target="_blank" rel="noreferrer noopener">
+      <a id="linkedin" aria-label="Linkedin Profile" href="https://linkedin.com/in/arvind-kumar-dev/" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-linkedin"></i>
       </a>
-      <a id="youtube" href="https://www.youtube.com/@Arvind-dev" target="_blank" rel="noreferrer noopener">
+      <a id="youtube" aria-label="Youtube Channel" href="https://www.youtube.com/@Arvind-dev" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a id="itchio" href="https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
+      <a id="itchio" aria-label="itch.io Page" href="https://arvindkumar.itch.io" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-itch-io"></i>
       </a>
-      <a id="twitter" href="https://www.twitter.com/HikatoKage117" target="_blank" rel="noreferrer noopener">
+      <a id="twitter" aria-label="Twitter Profile" href="https://www.twitter.com/HikatoKage117" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a id="instagram" href="https://www.instagram.com/lyricmation/" target="_blank" rel="noreferrer noopener">
+      <a id="instagram" aria-label="Instagram Profile" href="https://www.instagram.com/lyricmation/" target="_blank" rel="noreferrer noopener">
         <i class="fa-brands fa-instagram"></i>
       </a>
     </div>
-    <script type="text/javascript" src="js/app.js"></script>
   </footer>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>
