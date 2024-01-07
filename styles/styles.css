@@ -19,7 +19,7 @@
   /*Fonts*/
   --font-heading:'Krona One', sans-serif;
   --font-codeText: 'Space Mono', monospace;
-  /*LightMode*/
+
   --bg-color: #f1f1f8;
   --font-color: #000000;
   --secondary-font-color: #5d5d5d;
@@ -30,7 +30,7 @@
   --low-shadow: #ffffff; 
   --ak-logo-filter: invert(13%) sepia(3%) saturate(2%) hue-rotate(314deg) brightness(94%) contrast(96%);
 }
-[data-theme=dark]{
+[data-theme = dark]{
   --bg-color: #232323; 
   --font-color: #ffffff;
   --native-color: #f1f1f8;
@@ -66,7 +66,7 @@ header{
 }
 .headerShadow {
   box-shadow: 0px 3px 18px var(--high-shadow);
-  transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 #logo {
   cursor: pointer;
@@ -204,6 +204,7 @@ header{
   transform: scale(1) rotate(360deg);
 }
 .square-button{
+  cursor: pointer;
   width: 2.0em;
   height: 2.0em;
   border-radius: 0.5em;
@@ -437,7 +438,7 @@ Footer----------------------------------------------->
 footer{
   font:500 var(--font-text);
   background: var(--ak-black);
-  border-top: 2px solid #5e5e5e33;
+  border-top: 3px solid #70707033;
   color: var(--ak-white);
 }
 footer #social-links a{
