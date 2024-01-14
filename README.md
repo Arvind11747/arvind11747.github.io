@@ -5,9 +5,10 @@ The site is mainly the hero page for now, but I'll keep updating if and any requ
 Its written in Vanilla HTML, CSS and JS.
 
 Resources I've used:
-* https://getbootstrap.com/ : CSS Styling Framework. 
-* https://fontawesome.com/ : Icons.
-* https://devicon.dev/ : Programming and Brand icons.
-* https://fonts.google.com : Fonts.
-* https://neumorphism.io : Look and feel of buttons and shadows.
-* https://uiverse.io/ : Resources on buttons and UI elemnents.
+* CSS Styling Framework : https://getbootstrap.com/ 
+* Icons: https://fontawesome.com/
+* Programming and Brand icons : https://devicon.dev/
+* Fonts : https://fonts.google.com
+* Look and feel of buttons and shadows : https://neumorphism.io
+* Resources on buttons and UI elemnents : https://uiverse.io/
+* Scroll Icon: https://codepen.io/TKS31/pen/gOaKaxx
