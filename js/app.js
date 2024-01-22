@@ -2,8 +2,10 @@ window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     if (scroll > 10) {
         document.querySelector("#header").classList.add("headerShadow");
+        document.querySelector("#scroll-helper").classList.add("scrollFade");
     } else {
         document.querySelector("#header").classList.remove("headerShadow");
+        document.querySelector("#scroll-helper").classList.remove("scrollFade");
     }
 });
 
