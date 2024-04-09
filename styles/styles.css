@@ -1,5 +1,4 @@
 :root {
-  --translateDis: 2.2px;
   /*AK Palatte*/
   --ak-black: #232323;
   --ak-beige: #fff3d5;
@@ -18,44 +17,52 @@
   --ak-12-lightgreen: #bee8b4;
   /*Fonts*/
   --font-heading:'Krona One', sans-serif;
-  --font-codeText: 'Space Mono', monospace;
-  
+  --font-body: 'Poppins', sans-serif;
+  --font-codeText: "DM Mono", monospace;
+  /*AK Logo Flow distance*/
+  --translateDis: 1.5px;
+  /*Colors*/
   --neutral-grey:#70707033;
-
+  /*Light*/
   --bg-color: #f1f1f8;
   --font-color: #000000;
   --secondary-font-color: #5d5d5d;
   --tertiary-font-color: #383838;
   --native-color: #232323;
-  --gradientDotsColor: rgba(8, 8, 8, 0.075);
+  --gradientDotsColor: #08080813;
   --high-shadow: #cdcdd3;
-  --low-shadow: #ffffff; 
+  --low-shadow: #ffffff;
   --ak-logo-filter: invert(13%) sepia(3%) saturate(2%) hue-rotate(314deg) brightness(94%) contrast(96%);
+  --theme-swt-red-gold: var(--ak-3-red);
+  --theme-swt-blue-x: var(--ak-10-turquoise);
 }
 [data-theme = dark]{
-  --bg-color: #232323; 
+  --bg-color: #232323;
   --font-color: #ffffff;
   --native-color: #f1f1f8;
   --secondary-font-color: #747474;
   --tertiary-font-color: #b1b1b1;
-  --gradientDotsColor: rgba(250, 250, 250, 0.062);
+  --gradientDotsColor: #fafafa10;
   --high-shadow: #1e1e1e;
   --low-shadow: #282828;
   --ak-logo-filter: invert(97%) sepia(2%) saturate(547%) hue-rotate(201deg) brightness(99%) contrast(96%);
+  --theme-swt-red-gold: var(--ak-1-gold);
+  --theme-swt-blue-x: var(--ak-10-turquoise);
+
 }
 html{
   scroll-behavior:auto;
 }
 body{
   padding-top: 60px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body);
   color: var(--font-color);
   background: var(--bg-color) radial-gradient( var(--gradientDotsColor), 2px, transparent 0) -5px -5px;
   background-size: 30px 30px;
 }
 
-/* div,nav,button,i,p,h1,img,span,header,footer{
-  border: solid;
+/* div,nav,button,i,p,h1,img,span,header,footer */
+/* td,th{
   border-width: 1px;
   border-color: red;
 } */
@@ -218,15 +225,15 @@ header{
 /*<-----------------Nav------------------->*/
 .navbar-nav {
   text-align: center;
-  font: bold 20px var(--font-heading);
+  font: bold 16px var(--font-heading);
 }
-#header .nav-link{ 
+#header .nav-link{
   color: var(--secondary-font-color)!important;
 }
-#header .nav-link:hover{ 
+#header .nav-link:hover{
   color: var(--tertiary-font-color)!important;
 }
-#header .nav-link.active{ 
+#header .nav-link.active{
   color: var(--native-color)!important;
 }
 .toggle {
@@ -443,14 +450,253 @@ Hero----------------------------------------------->
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+/**
+<-----------------------------------------------Hero
+Content----------------------------------------------->
+*/
+h2{
+  font-family: var(--font-heading);
+}
+.card-box{
+  font-size: 16px;
+  border-radius: 50px;
+}
+.card-shadow{
+  background: var(--bg-color);
+  box-shadow:  9px 9px 15px var(--high-shadow),
+               -9px -9px 15px var(--low-shadow);
+}
+#emoji{
+  font-size: 22px;
+}
+.text-body-tertiary{
+  color:#747474 !important;
+}
+#tech-stack .nav{
+  font: 200 15px var(--font-heading);
+}
+#tech-stack .nav-link{
+  background: none;
+  color: rgb(112, 112, 112)!important;
+}
+#tech-stack .nav-link.active{
+  color: var(--native-color)!important;
+}
+#tech-stack i{
+  color: var(--native-color);
+  font-size: 60px;
+}
+.interest-img{
+  width: 250px;
+}
+a.link-color{
+  color: var(--ak-10-turquoise);
+  text-underline-offset: 7px;
+}
+/* a.link-color:hover{
+  color: var();
+} */
+a.link-color:visited{
+  color: var(--ak-3-red);
+}
+/**
+<-----------------------------------------------Content
+Footer----------------------------------------------->
+*/
+footer{
+  font:500 var(--font-text);
+  background: var(--ak-black);
+  border-top: 3px solid var(--neutral-grey);
+  color: var(--ak-white);
+}
+footer #social-links a{
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+  color: var(--ak-white);
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.2s color 0.5s ease;
+}
+footer #social-links a:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  transition: color 0.5s ease-in-out;
+}
+footer #github:hover {color: #f2f2f2;}
+footer #linkedin:hover {color: #0a66c2;}
+footer #youtube:hover {color: #ff0000;}
+footer #itchio:hover {color: #fa5c5c;}
+footer #twitter:hover {color: #1da1f2;}
+footer #instagram:hover {color: #ff0069;}
+/**
+<-----------------------------------------------Footer
+*/
+
+#git-table{
+  font: 400 17px var(--font-codeText);
+}
+
+#git-table tr{
+  display: inline-table;
+  width: 100%;
+}
+
+.git-timeline{
+  width: 70px !important;
+  position: relative;
+  height: 100%;
+}
+.git-merge .git-timeline{
+  width: 140px !important;
+}
+.git-timeline.git-message{
+  width: 100% !important;
+}
+
+.git-line{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg.git-line line,svg.git-line path{
+  stroke-width:5px;
+  fill:none;
+}
+.git-c-main svg.git-line line{
+  stroke-dasharray:10,5;
+}
+
+.git-row.git-origin{
+  height: 150px;
+}
+.git-row.git-branch{
+  height: 40px;
+}
+.git-row.git-commit{
+  height: 100px;
+}
+
+.git-row.git-merge{
+  height: 70px;
+}
+.git-circle, .git-arrow{
+  padding: 0;
+  top: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+  position: absolute;
+}
+
+.git-circle svg{
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+}
+.git-circle svg circle{
+  stroke-width: 5px;
+  fill:none;
+}
+.git-branch .git-circle svg circle{
+  stroke-width: 0;
+  fill: currentColor;
+}
+.git-arrow{
+  top:90%;
+}
+
+.git-merge .git-arrow{
+  top:80%;
+  left:25%;
+}
+.git-in-merge.git-arrow{
+  left: -25%;
+}
+
+.git-arrow svg{
+  width:30px;
+  height:26px; 
+  display: inline-block;
+}
+.git-arrow svg path{
+  stroke-width: 5px;
+  fill:none;
+  stroke-linecap: round;
+}
+.git-c-branch{
+  border: 3px solid;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.git-c-date{
+  color:var(--theme-swt-red-gold);
+}
+.git-c-bash{
+  color:var(--ak-10-turquoise);
+}
+
+.git-c-main{
+  border-color: var(--ak-9-darkblue);
+  color:var(--ak-9-darkblue);
+  stroke:var(--ak-9-darkblue);
+}
+.git-c-main .git-c-branch{
+  background-color: #2271a215;
+}
+.git-c-education{
+  border-color: var(--ak-3-red);
+  color:var(--ak-3-red);
+  stroke:var(--ak-3-red);
+}
+.git-c-education .git-c-branch{
+  background-color: #ff4a4515;
+}
+.git-c-experience{
+  border-color: var(--ak-2-orange);
+  color:var(--ak-2-orange);
+  stroke:var(--ak-2-orange);
+}
+.git-c-experience .git-c-branch{
+  background-color: #ff993315;
+}
+.git-c-projects{
+  border-color: var(--ak-11-green);
+  color:var(--ak-11-green);
+  stroke:var(--ak-11-green);
+}
+.git-c-projects .git-c-branch{
+  background-color: #48cea215;
+}
+.git-c-bio{
+  font-style: italic;
+  color: var(--native-color);
+}
 @media only screen and (max-width: 1000px)  {
   #hero h1{
     font-size: 80px;
   }
+  #git-table{
+    font: 400 12px var(--font-codeText);
+  }
+  
+  .git-c-date{
+    font-size: 11px;
+  }
+  
 }
 @media only screen and (max-width: 800px)  {
   #hero h1{
     font-size: 65px;
+  }
+  #tech-stack i{
+    font-size: 45px;
   }
   .field{
     height: 100%;
@@ -466,7 +712,7 @@ Hero----------------------------------------------->
       height: 8px;
       top: 22px
     }
-  }    
+  }
   @keyframes wheel {
     to {
       opacity: 0;
@@ -505,75 +751,6 @@ Hero----------------------------------------------->
 
 }
 
-/**
-<-----------------------------------------------Hero
-Content----------------------------------------------->
-*/
-h2{
-  font-family: var(--font-heading);
-}
-#card-box{
-  font-size: 18px;
-  border-radius: 50px;
-}
-.card-shadow{
-  background: var(--bg-color);
-  box-shadow:  9px 9px 15px var(--high-shadow),
-               -9px -9px 15px var(--low-shadow);
-}
-#emoji{
-  font-size: 22px;
-}
-.text-body-tertiary{
-  color:#747474 !important;
-}
-#tech-stack .nav{
-  font: 200 15px var(--font-heading);
-}
-#tech-stack .nav-link{ 
-  background: none;
-  color: rgb(112, 112, 112)!important;
-}
-#tech-stack .nav-link.active{ 
-  color: var(--native-color)!important;
-}
-#tech-stack i{
-  color: var(--native-color);
-  font-size: 60px;
-}
-/**
-<-----------------------------------------------Content
-Footer----------------------------------------------->
-*/
-footer{
-  font:500 var(--font-text);
-  background: var(--ak-black);
-  border-top: 3px solid var(--neutral-grey);
-  color: var(--ak-white);
-}
-footer #social-links a{
-  font-size: 20px;
-  padding: 10px;
-  display: inline-block;
-  color: var(--ak-white);
-  line-height: 1;
-  text-decoration: none;
-  transition: all 0.2s color 0.5s ease;
-}
-footer #social-links a:hover{
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  transition: color 0.5s ease-in-out;
-}
-footer #github:hover {color: #f2f2f2;}
-footer #linkedin:hover {color: #0a66c2;}
-footer #youtube:hover {color: #ff0000;}
-footer #itchio:hover {color: #fa5c5c;}
-footer #twitter:hover {color: #1da1f2;}
-footer #instagram:hover {color: #ff0069;}
-/**
-<-----------------------------------------------Footer
-*/
 @keyframes colorAnim {
   0%, 100%  {color:var(--ak-1-gold)}
   8%        {color:var(--ak-2-orange)}
@@ -660,28 +837,86 @@ footer #instagram:hover {color: #ff0069;}
   70%, 77%          {transform: translate3d(0, -72.5%, 0);}
   84%, 91%          {transform: translate3d(0, -87%, 0);}
 }
-.git-origin{
-  width: 40px;
-  display: grid;
-  justify-content: center;
+
+
+/* .git-origin{
+  position: relative;
+}
+
+.git-row-message{
+  width: 500px !important;
+}
+.git-checkout .git-timeline{
+  height: 35px;
+}
+
+.git-row{
+  width: 70px !important;
+}
+.git-timeline{
+  height:150px;
 }
 
 .git-line{
-  width: 5px;
-  height: 100px;
-  background: repeating-linear-gradient(0deg, 
-  var(--ak-9-darkblue), var(--ak-9-darkblue) 10px,
-  rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0) 15px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle-grid{
+  padding: 0;
+  top: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+  position: absolute;
+}
+
+.circle-grid li{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.git-circle-border{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid;
+}
+
+svg.git-line line{
+  stroke-width:5px;
+}
+
+.git-main svg.git-line line{
+  stroke-dasharray:10,5;
 }
 
 .git-circle{
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   position: relative;
-  border: 5px solid var(--ak-9-darkblue);
 }
-.git-circle:hover::before{
+.git-circle::before{
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 40px;
+  background-color: currentColor;
+}
+.git-circle-border::before{
   content: '';
   position: absolute;
   display: block;
@@ -693,8 +928,14 @@ footer #instagram:hover {color: #ff0069;}
   width: 20px;
   height: 20px;
   border-radius: 40px;
-  background-color: var(--ak-9-darkblue);
+  background-color: #ffffff00;
+  transition: all 0.25s ease-in-out;
 }
+.git-circle-border:hover::before{
+  background-color: currentColor;
+  transition: all 0.25s ease-in-out;
+}
+
 
 .git-arrow{
   position: relative;
@@ -711,8 +952,9 @@ footer #instagram:hover {color: #ff0069;}
   border: 2.5px solid var(--ak-9-darkblue);
   align-self: top;
   top: -15px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
+
 .git-arrow::before{
   left: -2.5px;
   transform: rotateZ(-45deg);
@@ -721,4 +963,4 @@ footer #instagram:hover {color: #ff0069;}
 .git-arrow::after{
   left: 2.5px;
   transform: rotateZ(45deg);
-}
+} */
