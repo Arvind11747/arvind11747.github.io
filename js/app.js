@@ -74,10 +74,12 @@ year.innerHTML = new Date().getFullYear();
 
 
 birthdayQuery();
-
+/**
+ * Yes A special birthday scroll list :D
+ */
 function birthdayQuery(){
     const date = new Date();
-    if(date.getDate() == 7 && date.getMonth() == 4)
+    if(date.getDate() == 7 && date.getMonth() == 5)
     {        
         const listItem = document.querySelector('#care-list');
         listItem.innerHTML = `
