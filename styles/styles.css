@@ -678,9 +678,10 @@ svg.git-line line,svg.git-line path{
   font-style: italic;
   color: var(--native-color);
 }
-@media only screen and (max-width: 1000px)  {
+/* @media only screen and (max-width: 1000px)  {
   #hero h1{
     font-size: 80px;
+    text-align: center;
   }
   #git-table{
     font: 400 12px var(--font-codeText);
@@ -690,14 +691,23 @@ svg.git-line line,svg.git-line path{
     font-size: 11px;
   }
   
-}
-@media only screen and (max-width: 800px)  {
+} */
+@media only screen and (max-width: 1024px)  {
   #hero h1{
-    font-size: 65px;
+    font-size: 80px;
   }
   #tech-stack i{
     font-size: 45px;
   }
+
+  #git-table{
+    font: 400 12px var(--font-codeText);
+  }
+  
+  .git-c-date{
+    font-size: 11px;
+  }
+
   .field{
     height: 100%;
     align-items: center;
@@ -729,24 +739,49 @@ svg.git-line line,svg.git-line path{
 }
 @media only screen and (max-width: 500px)  {
   #hero h1{
-    font-size: 75px;
+    font-size: 70px;
   }
   #logoMask{
     width: 320px;
   }
   #hero .scroll-list .scroll-list-item{
-    font-size: 20px;
+    font-size: 17px;
   }
 
   #hero .scroll-list-2 .scroll-list-item{
-    font-size: 20px;
+    font-size: 17px;
   }
   #callForAction{
-    font-size: 18px;
-    border-width: 2px;
+    font-size: 15px;
+    border-width: 3px;
   }
   #callForAction i {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #hero #social-links a{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 340px)  {
+  #hero h1{
+    font-size: 45px;
+  }
+  #hero .scroll-list .scroll-list-item{
+    font-size: 12px;
+  }
+  #hero .scroll-list-2 .scroll-list-item{
+    font-size: 12px;
+  }
+  #callForAction{
+    font-size: 11px;
+  }
+  #callForAction i {
+    font-size: 18px;
+  }
+  #hero #social-links a{
+    font-size: 14px;
+    padding: 2px;
   }
 
 }
