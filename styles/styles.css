@@ -344,7 +344,7 @@ Hero----------------------------------------------->
   font-size: 80px;
 }
 #hero .scroll-container{
-  margin:0px 0px 0px 10px;
+  margin:0px 0px 0px 0px;
   overflow: hidden;
   height: 40px;
 }
