@@ -16,8 +16,6 @@ wp-content/themes/twenty*/
 
 # ignore node dependency directories
 node_modules/
-# ignore .vscode folder
-.vscode/
 
 # ignore log files and databases
 *.log
